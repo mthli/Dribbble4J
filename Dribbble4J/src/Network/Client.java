@@ -17,7 +17,7 @@ public class Client {
 
         Response response = client.newCall(request).execute();
 
-        return response.toString();
+        return response.body().string();
     }
 
     // TODO

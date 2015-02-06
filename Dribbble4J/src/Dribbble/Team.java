@@ -1,7 +1,5 @@
 package Dribbble;
 
-import Dribbble.Links;
-
 public class Team {
     public static final String ID = "id";
 
@@ -79,20 +77,20 @@ public class Team {
         this.username = username;
     }
 
-    private String htmlURL;
+    private String html_url;
     public String getHtmlURL() {
-        return htmlURL;
+        return html_url;
     }
-    public void setHtmlUrl(String htmlURL) {
-        this.htmlURL = htmlURL;
+    public void setHtmlUrl(String html_url) {
+        this.html_url = html_url;
     }
 
-    private String avatarURL;
+    private String avatar_url;
     public String getAvatarURL() {
-        return avatarURL;
+        return avatar_url;
     }
-    public void setAvatarURL(String avatarURL) {
-        this.avatarURL = avatarURL;
+    public void setAvatarURL(String avatar_url) {
+        this.avatar_url = avatar_url;
     }
 
     private String bio;
@@ -119,60 +117,60 @@ public class Team {
         this.links = links;
     }
 
-    private int bucketsCount;
+    private int buckets_count;
     public int getBucketsCount() {
-        return bucketsCount;
+        return buckets_count;
     }
-    public void setBucketsCount(int bucketsCount) {
-        this.bucketsCount = bucketsCount;
+    public void setBucketsCount(int buckets_count) {
+        this.buckets_count = buckets_count;
     }
 
-    private int followersCount;
+    private int followers_count;
     public int getFollowersCount() {
-        return followersCount;
+        return followers_count;
     }
-    public void setFollowersCount(int followersCount) {
-        this.followersCount = followersCount;
+    public void setFollowersCount(int followers_count) {
+        this.followers_count = followers_count;
     }
 
-    private int followingsCount;
+    private int followings_count;
     public int getFollowingsCount() {
-        return followingsCount;
+        return followings_count;
     }
-    public void setFollowingsCount(int followingsCount) {
-        this.followingsCount = followingsCount;
+    public void setFollowingsCount(int followings_count) {
+        this.followings_count = followings_count;
     }
 
-    private int likesCount;
+    private int likes_count;
     public int getLikesCount() {
-        return likesCount;
+        return likes_count;
     }
-    public void setLikesCount(int likesCount) {
-        this.likesCount = likesCount;
+    public void setLikesCount(int likes_count) {
+        this.likes_count = likes_count;
     }
 
-    private int membersCount;
+    private int members_count;
     public int getMembersCount() {
-        return membersCount;
+        return members_count;
     }
-    public void setMembersCount(int membersCount) {
-        this.membersCount = membersCount;
+    public void setMembersCount(int members_count) {
+        this.members_count = members_count;
     }
 
-    private int projectsCount;
+    private int projects_count;
     public int getProjectsCount() {
-        return projectsCount;
+        return projects_count;
     }
-    public void setProjectsCount(int projectsCount) {
-        this.projectsCount = projectsCount;
+    public void setProjectsCount(int projects_count) {
+        this.projects_count = projects_count;
     }
 
-    private int shotsCount;
+    private int shots_count;
     public int getShotsCount() {
-        return shotsCount;
+        return shots_count;
     }
-    public void setShotsCount(int shotsCount) {
-        this.shotsCount = shotsCount;
+    public void setShotsCount(int shots_count) {
+        this.shots_count = shots_count;
     }
 
     private String type;
@@ -191,78 +189,104 @@ public class Team {
         this.pro = pro;
     }
 
-    private String bucketsURL;
+    private String buckets_url;
     public String getBucketsURL() {
-        return bucketsURL;
+        return buckets_url;
     }
-    public void setBucketsURL(String bucketsURL) {
-        this.bucketsURL = bucketsURL;
+    public void setBucketsURL(String buckets_url) {
+        this.buckets_url = buckets_url;
     }
 
-    private String followersURL;
+    private String followers_url;
     public String getFollowersURL() {
-        return followersURL;
+        return followers_url;
     }
-    public void setFollowersURL(String followersURL) {
-        this.followersURL = followersURL;
+    public void setFollowersURL(String followers_url) {
+        this.followers_url = followers_url;
     }
 
-    private String followingURL;
+    private String following_url;
     public String getFollowingURL() {
-        return followingURL;
+        return following_url;
     }
-    public void setFollowingURL(String followingURL) {
-        this.followingURL = followingURL;
+    public void setFollowingURL(String following_url) {
+        this.following_url = following_url;
     }
 
-    private String likesURL;
+    private String likes_url;
     public String getLikesURL() {
-        return likesURL;
+        return likes_url;
     }
-    public void setLikesURL(String likesURL) {
-        this.likesURL = likesURL;
+    public void setLikesURL(String likes_url) {
+        this.likes_url = likes_url;
     }
 
-    private String membersURL;
+    private String members_url;
     public String getMembersURL() {
-        return membersURL;
+        return members_url;
     }
-    public void setMembersURL(String membersURL) {
-        this.membersURL = membersURL;
+    public void setMembersURL(String members_url) {
+        this.members_url = members_url;
     }
 
-    private String shotsURL;
+    private String shots_url;
     public String getShotsURL() {
-        return shotsURL;
+        return shots_url;
     }
-    public void setShotsURL(String shotsURL) {
-        this.shotsURL = shotsURL;
+    public void setShotsURL(String shots_url) {
+        this.shots_url = shots_url;
     }
 
-    private String teamShotsURL;
+    private String team_shots_url;
     public String getTeamShotsURL() {
-        return teamShotsURL;
+        return team_shots_url;
     }
-    public void setTeamShotsURL(String teamShotsURL) {
-        this.teamShotsURL = teamShotsURL;
+    public void setTeamShotsURL(String team_shots_url) {
+        this.team_shots_url = team_shots_url;
     }
 
-    private String createdAt;
+    private String created_at;
     public String getCreatedAt() {
-        return createdAt;
+        return created_at;
     }
-    public void setCreatedAt(String createdAt) {
-        this.createdAt = createdAt;
+    public void setCreatedAt(String created_at) {
+        this.created_at = created_at;
     }
 
-    private String updatedAt;
+    private String updated_at;
     public String getUpdatedAt() {
-        return updatedAt;
+        return updated_at;
     }
-    public void setUpdatedAt(String updatedAt) {
-        this.updatedAt = updatedAt;
+    public void setUpdatedAt(String updated_at) {
+        this.updated_at = updated_at;
     }
 
-    // TODO
-    public Team() {}
+    public Team() {
+        this.id = 0;
+        this.name = null;
+        this.username = null;
+        this.html_url = null;
+        this.avatar_url = null;
+        this.bio = null;
+        this.location = null;
+        this.links = null;
+        this.buckets_count = 0;
+        this.followers_count = 0;
+        this.followings_count = 0;
+        this.likes_count = 0;
+        this.members_count = 0;
+        this.projects_count = 0;
+        this.shots_count = 0;
+        this.type = null;
+        this.pro = false;
+        this.buckets_url = null;
+        this.followers_url = null;
+        this.following_url = null;
+        this.likes_url = null;
+        this.members_url = null;
+        this.shots_url = null;
+        this.team_shots_url = null;
+        this.created_at = null;
+        this.updated_at = null;
+    }
 }

@@ -1,7 +1,5 @@
 package Dribbble;
 
-import Dribbble.Images;
-
 public class Shot {
     public static final String ID = "id";
 
@@ -99,124 +97,124 @@ public class Shot {
         this.images = images;
     }
 
-    private int viewsCount;
+    private int views_count;
     public int getViewsCount() {
-        return viewsCount;
+        return views_count;
     }
-    public void setViewsCount(int viewsCount) {
-        this.viewsCount = viewsCount;
+    public void setViewsCount(int views_count) {
+        this.views_count = views_count;
     }
 
-    private int likesCount;
+    private int likes_count;
     public int getLikesCount() {
-        return likesCount;
+        return likes_count;
     }
-    public void setLikesCount(int likesCount) {
-        this.likesCount = likesCount;
+    public void setLikesCount(int likes_count) {
+        this.likes_count = likes_count;
     }
 
-    private int commentsCount;
+    private int comments_count;
     public int getCommentsCount() {
-        return commentsCount;
+        return comments_count;
     }
-    public void setCommentsCount(int commentsCount) {
-        this.commentsCount = commentsCount;
+    public void setCommentsCount(int comments_count) {
+        this.comments_count = comments_count;
     }
 
-    private int attachmentsCount;
+    private int attachments_count;
     public int getAttachmentsCount() {
-        return attachmentsCount;
+        return attachments_count;
     }
-    public void setAttachmentsCount(int attachmentsCount) {
-        this.attachmentsCount = attachmentsCount;
+    public void setAttachmentsCount(int attachments_count) {
+        this.attachments_count = attachments_count;
     }
 
-    private int reboundsCount;
+    private int rebounds_count;
     public int getReboundsCount() {
-        return reboundsCount;
+        return rebounds_count;
     }
-    public void setReboundsCount(int reboundsCount) {
-        this.reboundsCount = reboundsCount;
+    public void setReboundsCount(int rebounds_count) {
+        this.rebounds_count = rebounds_count;
     }
 
-    private int bucketsCount;
+    private int buckets_count;
     public int getBucketsCount() {
-        return bucketsCount;
+        return buckets_count;
     }
-    public void setBucketsCount(int bucketsCount) {
-        this.bucketsCount = bucketsCount;
+    public void setBucketsCount(int buckets_count) {
+        this.buckets_count = buckets_count;
     }
 
-    private String createdAt;
+    private String created_at;
     public String getCreatedAt() {
-        return createdAt;
+        return created_at;
     }
-    public void setCreatedAt(String createdAt) {
-        this.createdAt = createdAt;
+    public void setCreatedAt(String created_at) {
+        this.created_at = created_at;
     }
 
-    private String updatedAt;
+    private String updated_at;
     public String getUpdatedAt() {
-        return updatedAt;
+        return updated_at;
     }
-    public void setUpdatedAt(String updatedAt) {
-        this.updatedAt = updatedAt;
+    public void setUpdatedAt(String updated_at) {
+        this.updated_at = updated_at;
     }
 
-    private String htmlURL;
+    private String html_url;
     public String getHtmlURL() {
-        return htmlURL;
+        return html_url;
     }
-    public void setHtmlURL(String htmlURL) {
-        this.htmlURL = htmlURL;
+    public void setHtmlURL(String html_url) {
+        this.html_url = html_url;
     }
 
-    private String attachmentsURL;
+    private String attachments_url;
     public String getAttachmentsURL() {
-        return attachmentsURL;
+        return attachments_url;
     }
-    public void setAttachmentsURL(String attachmentsURL) {
-        this.attachmentsURL = attachmentsURL;
+    public void setAttachmentsURL(String attachments_url) {
+        this.attachments_url = attachments_url;
     }
 
-    private String bucketsURL;
+    private String buckets_url;
     public String getBucketsURL() {
-        return bucketsURL;
+        return buckets_url;
     }
-    public void setBucketsURL(String bucketsURL) {
-        this.bucketsURL = bucketsURL;
+    public void setBucketsURL(String buckets_url) {
+        this.buckets_url = buckets_url;
     }
 
-    private String commentsURL;
+    private String comments_url;
     public String getCommentsURL() {
-        return commentsURL;
+        return comments_url;
     }
-    public void setCommentsURL(String commentsURL) {
-        this.commentsURL = commentsURL;
+    public void setCommentsURL(String comments_url) {
+        this.comments_url = comments_url;
     }
 
-    private String likesURL;
+    private String likes_url;
     public String getLikesURL() {
-        return likesURL;
+        return likes_url;
     }
-    public void setLikesURL(String likesURL) {
-        this.likesURL = likesURL;
+    public void setLikesURL(String likes_url) {
+        this.likes_url = likes_url;
     }
 
-    private String projectsURL;
+    private String projects_url;
     public String getProjectsURL() {
-        return projectsURL;
+        return projects_url;
     }
-    public void setProjectsURL(String projectsURL) {
-        this.projectsURL = projectsURL;
+    public void setProjectsURL(String projects_url) {
+        this.projects_url = projects_url;
     }
 
-    private String reboundsURL;
+    private String rebounds_url;
     public String getReboundsURL() {
-        return reboundsURL;
+        return rebounds_url;
     }
-    public void setReboundsURL(String reboundsURL) {
-        this.reboundsURL = reboundsURL;
+    public void setReboundsURL(String rebounds_url) {
+        this.rebounds_url = rebounds_url;
     }
 
     private String[] tags;
@@ -243,6 +241,30 @@ public class Shot {
         this.team = team;
     }
 
-    // TODO
-    public Shot() {}
+    public Shot() {
+        this.id = 0;
+        this.title = null;
+        this.description = null;
+        this.width = 0;
+        this.height = 0;
+        this.images = null;
+        this.views_count = 0;
+        this.likes_count = 0;
+        this.comments_count = 0;
+        this.attachments_count = 0;
+        this.rebounds_count = 0;
+        this.buckets_count = 0;
+        this.created_at = null;
+        this.updated_at = null;
+        this.html_url = null;
+        this.attachments_url = null;
+        this.buckets_url = null;
+        this.comments_url = null;
+        this.likes_url = null;
+        this.projects_url = null;
+        this.rebounds_url = null;
+        this.tags = null;
+        this.user = null;
+        this.team = null;
+    }
 }

@@ -5,7 +5,7 @@ public class Links {
 
     public static final String TWITTER = "twitter";
 
-    public String web;
+    private String web;
     public String getWeb() {
         return web;
     }
@@ -13,7 +13,7 @@ public class Links {
         this.web = web;
     }
 
-    public String twitter;
+    private String twitter;
     public String getTwitter() {
         return twitter;
     }
@@ -21,6 +21,8 @@ public class Links {
         this.twitter = twitter;
     }
 
-    // TODO
-    public Links() {}
+    public Links() {
+        this.web = null;
+        this.twitter = null;
+    }
 }

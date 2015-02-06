@@ -31,6 +31,9 @@ public class Images {
         this.teaser = teaser;
     }
 
-    // TODO
-    public Images() {}
+    public Images() {
+        this.hidpi = null;
+        this.normal = null;
+        this.teaser = null;
+    }
 }

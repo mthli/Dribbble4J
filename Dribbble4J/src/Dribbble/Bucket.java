@@ -39,28 +39,28 @@ public class Bucket {
         this.description = description;
     }
 
-    private int shotsCount;
+    private int shots_count;
     public int getShotsCount() {
-        return shotsCount;
+        return shots_count;
     }
-    public void setShotsCount(int shotsCount) {
-        this.shotsCount = shotsCount;
+    public void setShotsCount(int shots_count) {
+        this.shots_count = shots_count;
     }
 
-    private String createdAt;
+    private String created_at;
     public String getCreatedAt() {
-        return createdAt;
+        return created_at;
     }
-    public void setCreatedAt(String createdAt) {
-        this.createdAt = createdAt;
+    public void setCreatedAt(String created_at) {
+        this.created_at = created_at;
     }
 
-    private String updatedAt;
+    private String updated_at;
     public String getUpdatedAt() {
-        return updatedAt;
+        return updated_at;
     }
-    public void setUpdatedAt(String updatedAt) {
-        this.updatedAt = updatedAt;
+    public void setUpdatedAt(String updated_at) {
+        this.updated_at = updated_at;
     }
 
     private User user;
@@ -71,6 +71,13 @@ public class Bucket {
         this.user = user;
     }
 
-    // TODO
-    public Bucket() {}
+    public Bucket() {
+        this.id = 0;
+        this.name = null;
+        this.description = null;
+        this.shots_count = 0;
+        this.created_at = null;
+        this.updated_at = null;
+        this.user = null;
+    }
 }
