@@ -1,3 +1,5 @@
+package Dribbble;
+
 public class Links {
     public static final String WEB = "web";
 

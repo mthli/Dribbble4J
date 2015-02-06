@@ -1,3 +1,7 @@
+package Dribbble;
+
+import Dribbble.Links;
+
 public class Team {
     public static final String ID = "id";
 

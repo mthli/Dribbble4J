@@ -1,3 +1,5 @@
+package Dribbble;
+
 public class Images {
     public static final String HIDPI = "hidpi";
 

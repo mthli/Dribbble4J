@@ -1,3 +1,7 @@
+package Dribbble;
+
+import Dribbble.Images;
+
 public class Shot {
     public static final String ID = "id";
 
