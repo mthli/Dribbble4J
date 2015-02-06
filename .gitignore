@@ -1,7 +1,7 @@
 *.class
 
 # Folders
-Dribbble4j/src/Test/*
+Dribbble4J/src/Test/
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
