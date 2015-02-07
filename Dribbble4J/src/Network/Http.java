@@ -4,14 +4,13 @@ import com.squareup.okhttp.*;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.Proxy;
+import java.util.concurrent.TimeUnit;
 
 public class Http {
     private String accessToken;
 
     private OkHttpClient client;
-    public OkHttpClient getClient() {
-        return client;
-    }
 
     public Http(String accessToken) {
         this.accessToken = accessToken;
@@ -184,6 +183,46 @@ public class Http {
         }
 
         return client.newCall(request).execute();
+    }
+
+    public Cache getCache() {
+        return client.getCache();
+    }
+
+    public void setCache(Cache cache) {
+        client.setCache(cache);
+    }
+
+    public int getConnectTimeout() {
+        return client.getConnectTimeout();
+    }
+
+    public void setConnectTimeout(long timeout, TimeUnit unit) {
+        client.setConnectTimeout(timeout, unit);
+    }
+
+    public int getReadTimeout() {
+        return client.getReadTimeout();
+    }
+
+    public void setReadTimeout(long timeout, TimeUnit unit) {
+        client.setReadTimeout(timeout, unit);
+    }
+
+    public int getWriteTimeout() {
+        return client.getReadTimeout();
+    }
+
+    public void setWriteTimeout(long timeout, TimeUnit unit) {
+        client.setWriteTimeout(timeout, unit);
+    }
+
+    public Proxy getProxy() {
+        return client.getProxy();
+    }
+
+    public void setProxy(Proxy proxy) {
+        client.setProxy(proxy);
     }
 
     public void cancel(Object tag) {

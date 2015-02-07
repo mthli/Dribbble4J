@@ -42,7 +42,8 @@ public class Dribbble {
         this.accessToken = accessToken;
         this.http = new Http(accessToken);
 
-        // TODO
+        // TODO: more
+
         this.userService = new UserService(this.http);
     }
 }

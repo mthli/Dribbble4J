@@ -23,6 +23,16 @@ public class Parameter {
 
     public static final int STATUS_422 = 422;
 
+    public static final int STATUS_429 = 429;
+
+    public static final String PAGE = "page=";
+
+    public static final int DEFAULT_PAGE = 1;
+
+    public static final String PER_PAGE = "per_page=";
+
+    public static final int DEFAULT_PER_PAGE = 12;
+
     public static final String SCHEMA = "https://api.dribbble.com/v1";
 
     public static final String AUTHORIZATION = "Authorization";
