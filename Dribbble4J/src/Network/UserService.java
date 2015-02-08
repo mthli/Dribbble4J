@@ -343,7 +343,7 @@ public class UserService {
         String url = UNFOLLOW.replace(Parameter.USER, username);
 
         try {
-            Response response = http.put(null, url, TAG);
+            Response response = http.delete(url, TAG);
             if (response.code() != Parameter.STATUS_204) {
                 throw new ResponseException(response.toString());
             }
@@ -363,5 +363,44 @@ public class UserService {
                 + "&"
                 + Parameter.PER_PAGE + perPage;
         return unit.getShots(url, TAG);
+    }
+
+    public List<Project> getAuthenticatedUserProjects() throws ResponseException {
+        return getAuthenticatedUserProjects(Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+    }
+
+    public List<Project> getAuthenticatedUserProjects(int page, int perPage) throws ResponseException {
+        String url = AUTHENTICATED_USER_PROJECTS
+                + "?"
+                + Parameter.PAGE + page
+                + "&"
+                + Parameter.PER_PAGE + perPage;
+        return unit.getProjects(url, TAG);
+    }
+
+    public List<Shot> getAuthenticatedUserShots() throws ResponseException {
+        return getAuthenticatedUserShots(Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+    }
+
+    public List<Shot> getAuthenticatedUserShots(int page, int perPage) throws ResponseException {
+        String url = AUTHENTICATED_USER_SHOTS
+                + "?"
+                + Parameter.PAGE + page
+                + "&"
+                + Parameter.PER_PAGE + perPage;
+        return unit.getShots(url, TAG);
+    }
+
+    public List<Team> getAuthenticatedUserTeams() throws ResponseException {
+        return getAuthenticatedUserTeams(Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+    }
+
+    public List<Team> getAuthenticatedUserTeams(int page, int perPage) throws ResponseException {
+        String url = AUTHENTICATED_USER_TEAMS
+                + "?"
+                + Parameter.PAGE + page
+                + "&"
+                + Parameter.PER_PAGE + perPage;
+        return unit.getTeams(url, TAG);
     }
 }

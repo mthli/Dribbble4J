@@ -3,6 +3,8 @@ package Network;
 public class Parameter {
     public static final int STATUS_200 = 200;
 
+    public static final int STATUS_201 = 201;
+
     public static final int STATUS_204 = 204;
 
     public static final int STATUS_304 = 304;
@@ -24,6 +26,12 @@ public class Parameter {
     public static final String PER_PAGE = "per_page=";
 
     public static final int DEFAULT_PER_PAGE = 30;
+
+    public static final String NAME = "name=";
+
+    public static final String DESCRIPTION = "description=";
+
+    public static final String SHOT_ID = "shot_id=";
 
     public static final String SCHEMA = "https://api.dribbble.com/v1";
 
