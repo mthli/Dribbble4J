@@ -28,8 +28,8 @@
       <file leaf-file-name="UserService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Network/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19900498" vertical-offset="0" max-vertical-offset="2295">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.17224081" vertical-offset="1532" max-vertical-offset="2445">
+              <caret line="243" column="100" selection-start-line="243" selection-start-column="100" selection-end-line="243" selection-end-column="100" />
               <folding>
                 <element signature="method#UserService#0;class#UserService#0" expanded="false" />
                 <element signature="method#getUser#0;class#UserService#0" expanded="false" />
@@ -52,6 +52,10 @@
                 <element signature="method#getUserLikes#1;class#UserService#0" expanded="false" />
                 <element signature="method#getUserLikes#2;class#UserService#0" expanded="false" />
                 <element signature="method#getUserLikes#3;class#UserService#0" expanded="false" />
+                <element signature="method#getUserProjects#0;class#UserService#0" expanded="false" />
+                <element signature="method#getUserProjects#1;class#UserService#0" expanded="false" />
+                <element signature="method#getUserProjects#2;class#UserService#0" expanded="false" />
+                <element signature="method#getUserProjects#3;class#UserService#0" expanded="false" />
                 <element signature="method#getAuthenticatedUser#0;class#UserService#0" expanded="false" />
                 <element signature="method#getAuthenticatedUserBuckets#0;class#UserService#0" expanded="false" />
                 <element signature="method#getAuthenticatedUserBuckets#1;class#UserService#0" expanded="false" />
@@ -126,16 +130,14 @@
         <option value="$PROJECT_DIR$/src/Network/ProjectService.java" />
         <option value="$PROJECT_DIR$/src/Network/ShotService.java" />
         <option value="$PROJECT_DIR$/src/Network/TeamService.java" />
-        <option value="$PROJECT_DIR$/src/Network/UserService.java" />
         <option value="$PROJECT_DIR$/src/Dribbble/Project.java" />
+        <option value="$PROJECT_DIR$/src/Network/UserService.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2" />
-    <option name="y" value="-3" />
-    <option name="width" value="1370" />
-    <option name="height" value="748" />
+    <option name="width" value="1364" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -160,6 +162,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,8 +252,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,19 +352,6 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -389,6 +378,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -494,7 +496,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="-3" width="1370" height="748" extended-state="6" />
+    <frame x="0" y="0" width="1364" height="741" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -503,25 +505,25 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.32905295" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="144" y="154" width="872" height="464" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32698414" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905295" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32539684" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25528702" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.5949764" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="875" y="111" width="366" height="630" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43968254" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.5949764" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="875" y="111" width="366" height="630" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43968254" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32698414" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32539684" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.32857144" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="235" y="123" width="1086" height="542" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -570,7 +572,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Network/UserService.java</url>
-          <line>407</line>
+          <line>450</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
@@ -584,11 +586,59 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Network/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2295">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#UserService#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUser#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUser#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserBuckets#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserBuckets#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserBuckets#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserBuckets#3;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowers#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowers#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowers#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowers#3;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowing#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowing#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowing#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowing#3;class#UserService#0" expanded="false" />
+            <element signature="method#getRelationShip#0;class#UserService#0" expanded="false" />
+            <element signature="method#getRelationShip#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserLikes#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserLikes#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserLikes#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserLikes#3;class#UserService#0" expanded="false" />
+            <element signature="method#getUserProjects#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserProjects#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserProjects#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserProjects#3;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUser#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserBuckets#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserBuckets#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowers#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowers#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowing#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowing#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowingShots#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowingShots#1;class#UserService#0" expanded="false" />
+            <element signature="method#isFollowing#0;class#UserService#0" expanded="false" />
+            <element signature="method#isFollowing#1;class#UserService#0" expanded="false" />
+            <element signature="method#follow#0;class#UserService#0" expanded="false" />
+            <element signature="method#follow#1;class#UserService#0" expanded="false" />
+            <element signature="method#unfollow#0;class#UserService#0" expanded="false" />
+            <element signature="method#unfollow#1;class#UserService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -636,7 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09950249" vertical-offset="0" max-vertical-offset="603">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42288557" vertical-offset="0" max-vertical-offset="603">
           <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -699,7 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
           <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -707,7 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07462686" vertical-offset="0" max-vertical-offset="603">
           <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -715,7 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07462686" vertical-offset="0" max-vertical-offset="603">
           <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -723,7 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07462686" vertical-offset="0" max-vertical-offset="603">
           <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,8 +789,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Network/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19900498" vertical-offset="0" max-vertical-offset="2295">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.17224081" vertical-offset="1532" max-vertical-offset="2445">
+          <caret line="243" column="100" selection-start-line="243" selection-start-column="100" selection-end-line="243" selection-end-column="100" />
           <folding>
             <element signature="method#UserService#0;class#UserService#0" expanded="false" />
             <element signature="method#getUser#0;class#UserService#0" expanded="false" />
@@ -769,6 +813,10 @@
             <element signature="method#getUserLikes#1;class#UserService#0" expanded="false" />
             <element signature="method#getUserLikes#2;class#UserService#0" expanded="false" />
             <element signature="method#getUserLikes#3;class#UserService#0" expanded="false" />
+            <element signature="method#getUserProjects#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserProjects#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserProjects#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserProjects#3;class#UserService#0" expanded="false" />
             <element signature="method#getAuthenticatedUser#0;class#UserService#0" expanded="false" />
             <element signature="method#getAuthenticatedUserBuckets#0;class#UserService#0" expanded="false" />
             <element signature="method#getAuthenticatedUserBuckets#1;class#UserService#0" expanded="false" />

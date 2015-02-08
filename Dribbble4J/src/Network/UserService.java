@@ -1,6 +1,7 @@
 package Network;
 
 import Dribbble.Bucket;
+import Dribbble.Project;
 import Dribbble.Shot;
 import Dribbble.User;
 import com.google.gson.Gson;
@@ -245,7 +246,11 @@ public class UserService {
 
         List<Shot> shots;
 
-        String url = USER_LIKES.replace(Parameter.USER, username);
+        String url = USER_LIKES.replace(Parameter.USER, username)
+                + "?"
+                + Parameter.PAGE + page
+                + "&"
+                + Parameter.PER_PAGE + perPage;
 
         try {
             response = http.get(url, TAG);
@@ -259,6 +264,44 @@ public class UserService {
         }
 
         return shots;
+    }
+
+    public List<Project> getUserProjects(int id) throws ResponseException {
+        return getUserProjects(id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+    }
+
+    public List<Project> getUserProjects(int id, int page, int perPage) throws ResponseException {
+        return getUserProjects(String.valueOf(id), page, perPage);
+    }
+
+    public List<Project> getUserProjects(String username) throws ResponseException {
+        return getUserProjects(username, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+    }
+
+    // TODO: test
+    public List<Project> getUserProjects(String username, int page, int perPage) throws ResponseException {
+        Response response;
+
+        List<Project> projects;
+
+        String url = USER_PROJECTS.replace(Parameter.USER, username)
+                + "?"
+                + Parameter.PAGE + page
+                + "&"
+                + Parameter.PER_PAGE + page;
+
+        try {
+            response = http.get(url, TAG);
+            if (response.code() != Parameter.STATUS_200) {
+                throw new ResponseException(response.toString());
+            }
+
+            projects = gson.fromJson(response.body().string(), new TypeToken<List<Project>>(){}.getType());
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+
+        return projects;
     }
 
     public User getAuthenticatedUser() throws ResponseException {
