@@ -11,6 +11,8 @@ import java.io.IOException;
 import java.util.List;
 
 public class UserService {
+    private static final String TAG = "USER_SERVICE";
+    
     private static final String USER = Parameter.SCHEMA + "/users/" + Parameter.USER;
 
     private static final String USER_BUCKETS = Parameter.SCHEMA + "/users/" + Parameter.USER + "/buckets";
@@ -19,7 +21,15 @@ public class UserService {
 
     private static final String USER_FOLLOWING = Parameter.SCHEMA + "/users/" + Parameter.USER + "/following";
 
-    private static final String RELATIONSHIP = Parameter.SCHEMA + "/users/" + Parameter.USER +"/following/" + Parameter.TARGET_USER;
+    private static final String RELATIONSHIP = Parameter.SCHEMA + "/users/" + Parameter.USER + "/following/" + Parameter.TARGET_USER;
+
+    private static final String USER_LIKES = Parameter.SCHEMA + "/users/" + Parameter.USER + "/likes";
+
+    private static final String USER_PROJECTS = Parameter.SCHEMA + "/users/" + Parameter.USER + "/projects";
+
+    private static final String USER_SHOTS = Parameter.SCHEMA + "/users/" + Parameter.USER + "/shots";
+
+    private static final String USER_TEAMS = Parameter.SCHEMA + "/users/" + Parameter.USER + "/teams";
 
     private static final String AUTHENTICATED_USER = Parameter.SCHEMA + "/user";
 
@@ -37,6 +47,14 @@ public class UserService {
 
     private static final String UNFOLLOW = Parameter.SCHEMA + "/users/" + Parameter.USER + "/follow";
 
+    private static final String AUTHENTICATED_USER_LIKES = Parameter.SCHEMA + "/user/likes";
+
+    private static final String AUTHENTICATED_USER_PROJECTS = Parameter.SCHEMA + "/user/projects";
+
+    private static final String AUTHENTICATED_USER_SHOTS = Parameter.SCHEMA + "/user/shots";
+
+    private static final String AUTHENTICATED_USER_TEAMS = Parameter.SCHEMA + "/user/teams";
+
     private Http http;
 
     private Gson gson;
@@ -47,7 +65,7 @@ public class UserService {
     }
 
     public void cancel() {
-        http.cancel(Parameter.TAG_USER_SERVICE);
+        http.cancel(TAG);
     }
 
     public User getUser(int id) throws ResponseException {
@@ -60,7 +78,7 @@ public class UserService {
         User user;
 
         try {
-            response = http.get(USER.replace(Parameter.USER, username), Parameter.TAG_USER_SERVICE);
+            response = http.get(USER.replace(Parameter.USER, username), TAG);
             if (response.code() != Parameter.STATUS_200) {
                 throw new ResponseException(response.toString());
             }
@@ -98,7 +116,7 @@ public class UserService {
                 + Parameter.PER_PAGE + perPage;
 
         try {
-            response = http.get(url, Parameter.TAG_USER_SERVICE);
+            response = http.get(url, TAG);
             if (response.code() != Parameter.STATUS_200) {
                 throw new ResponseException(response.toString());
             }
@@ -136,7 +154,7 @@ public class UserService {
                 + Parameter.PER_PAGE + perPage;
 
         try {
-            response = http.get(url, Parameter.TAG_USER_SERVICE);
+            response = http.get(url, TAG);
             if (response.code() != Parameter.STATUS_200) {
                 throw new ResponseException(response.toString());
             }
@@ -174,7 +192,7 @@ public class UserService {
                 + Parameter.PER_PAGE + perPage;
 
         try {
-            response = http.get(url, Parameter.TAG_USER_SERVICE);
+            response = http.get(url, TAG);
             if (response.code() != Parameter.STATUS_200) {
                 throw new ResponseException(response.toString());
             }
@@ -196,7 +214,7 @@ public class UserService {
         String url = RELATIONSHIP.replace(Parameter.USER, username).replace(Parameter.TARGET_USER, targetUsername);
 
         try {
-            Response response = http.get(url, Parameter.TAG_USER_SERVICE);
+            Response response = http.get(url, TAG);
             if (response.code() == Parameter.STATUS_204) {
                 return true;
             } else if (response.code() == Parameter.STATUS_404) {
@@ -209,13 +227,47 @@ public class UserService {
         }
     }
 
+    public List<Shot> getUserLikes(int id) throws ResponseException {
+        return getUserLikes(id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+    }
+
+    public List<Shot> getUserLikes(int id, int page, int perPage) throws ResponseException {
+        return getUserLikes(String.valueOf(id), page, perPage);
+    }
+
+    public List<Shot> getUserLikes(String username) throws ResponseException {
+        return getUserLikes(username, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+    }
+
+    // TODO: test
+    public List<Shot> getUserLikes(String username, int page, int perPage) throws ResponseException {
+        Response response;
+
+        List<Shot> shots;
+
+        String url = USER_LIKES.replace(Parameter.USER, username);
+
+        try {
+            response = http.get(url, TAG);
+            if (response.code() != Parameter.STATUS_204) {
+                throw new ResponseException(response.toString());
+            }
+
+            shots = gson.fromJson(response.body().string(), new TypeToken<List<Shot>>(){}.getType());
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+
+        return shots;
+    }
+
     public User getAuthenticatedUser() throws ResponseException {
         Response response;
 
         User user;
 
         try {
-            response = http.get(AUTHENTICATED_USER, Parameter.TAG_USER_SERVICE);
+            response = http.get(AUTHENTICATED_USER, TAG);
             if (response.code() != Parameter.STATUS_200) {
                 throw new ResponseException(response.toString());
             }
@@ -245,7 +297,7 @@ public class UserService {
                 + Parameter.PER_PAGE + perPage;
 
         try {
-            response = http.get(url, Parameter.TAG_USER_SERVICE);
+            response = http.get(url, TAG);
             if (response.code() != Parameter.STATUS_200) {
                 throw new ResponseException(response.toString());
             }
@@ -275,7 +327,7 @@ public class UserService {
                 + Parameter.PER_PAGE + perPage;
 
         try {
-            response = http.get(url, Parameter.TAG_USER_SERVICE);
+            response = http.get(url, TAG);
             if (response.code() != Parameter.STATUS_200) {
                 throw new ResponseException(response.toString());
             }
@@ -305,7 +357,7 @@ public class UserService {
                 + Parameter.PER_PAGE + perPage;
 
         try {
-            response = http.get(url, Parameter.TAG_USER_SERVICE);
+            response = http.get(url, TAG);
             if (response.code() != Parameter.STATUS_200) {
                 throw new ResponseException(response.toString());
             }
@@ -335,7 +387,7 @@ public class UserService {
                 + Parameter.PER_PAGE + perPage;
 
         try {
-            response = http.get(url, Parameter.TAG_USER_SERVICE);
+            response = http.get(url, TAG);
             if (response.code() != Parameter.STATUS_200) {
                 throw new ResponseException(response.toString());
             }
@@ -346,5 +398,63 @@ public class UserService {
         }
 
         return shots;
+    }
+
+    public boolean isFollowing(int id) throws ResponseException {
+        return isFollowing(String.valueOf(id));
+    }
+
+    // TODO: test
+    public boolean isFollowing(String username) throws ResponseException {
+        String url = IS_FOLLOWING.replace(Parameter.USER, username);
+
+        try {
+            Response response = http.get(url, TAG);
+            if (response.code() == Parameter.STATUS_204) {
+                return true;
+            } else if (response.code() == Parameter.STATUS_404) {
+                return false;
+            } else {
+                throw new ResponseException(response.toString());
+            }
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
+    public void follow(int id) throws ResponseException {
+        follow(String.valueOf(id));
+    }
+
+    // TODO: test
+    public void follow(String username) throws ResponseException {
+        String url = FOLLOW.replace(Parameter.USER, username);
+
+        try {
+            Response response = http.put(null, url, TAG);
+            if (response.code() != Parameter.STATUS_204) {
+                throw new ResponseException(response.toString());
+            }
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
+    public void unfollow(int id) throws ResponseException {
+        unfollow(String.valueOf(id));
+    }
+
+    // TODO: test
+    public void unfollow(String username) throws ResponseException {
+        String url = UNFOLLOW.replace(Parameter.USER, username);
+
+        try {
+            Response response = http.put(null, url, TAG);
+            if (response.code() != Parameter.STATUS_204) {
+                throw new ResponseException(response.toString());
+            }
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
     }
 }
