@@ -1,11 +1,6 @@
 package Network;
 
-import Dribbble.Bucket;
-import Dribbble.Project;
-import Dribbble.Shot;
-import Dribbble.User;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
+import Dribbble.*;
 import com.squareup.okhttp.Response;
 
 import java.io.IOException;
@@ -58,11 +53,11 @@ public class UserService {
 
     private Http http;
 
-    private Gson gson;
+    private Unit unit;
 
     public UserService(Http http) {
         this.http = http;
-        this.gson = new Gson();
+        this.unit = new Unit(http);
     }
 
     public void cancel() {
@@ -74,22 +69,8 @@ public class UserService {
     }
 
     public User getUser(String username) throws ResponseException {
-        Response response;
-
-        User user;
-
-        try {
-            response = http.get(USER.replace(Parameter.USER, username), TAG);
-            if (response.code() != Parameter.STATUS_200) {
-                throw new ResponseException(response.toString());
-            }
-
-            user = gson.fromJson(response.body().string(), User.class);
-        } catch (IOException i) {
-            throw new ResponseException(i.getMessage(), i);
-        }
-
-        return user;
+        String url = USER.replace(Parameter.USER, username);
+        return unit.getUser(url, TAG);
     }
 
     public List<Bucket> getUserBuckets(int id) throws ResponseException {
@@ -104,30 +85,13 @@ public class UserService {
         return getUserBuckets(username, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
     }
 
-    // TODO: test
     public List<Bucket> getUserBuckets(String username, int page, int perPage) throws ResponseException {
-        Response response;
-
-        List<Bucket> buckets;
-
         String url = USER_BUCKETS.replace(Parameter.USER, username)
                 + "?"
                 + Parameter.PAGE + page
                 + "&"
                 + Parameter.PER_PAGE + perPage;
-
-        try {
-            response = http.get(url, TAG);
-            if (response.code() != Parameter.STATUS_200) {
-                throw new ResponseException(response.toString());
-            }
-
-            buckets = gson.fromJson(response.body().string(), new TypeToken<List<Bucket>>(){}.getType());
-        } catch (IOException i) {
-            throw new ResponseException(i.getMessage(), i);
-        }
-
-        return buckets;
+        return unit.getBuckets(url, TAG);
     }
 
     public List<User> getUserFollowers(int id) throws ResponseException {
@@ -142,30 +106,13 @@ public class UserService {
         return getUserFollowers(username, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
     }
 
-    // TODO; test
     public List<User> getUserFollowers(String username, int page, int perPage) throws ResponseException {
-        Response response;
-
-        List<User> users;
-
         String url = USER_FOLLOWERS.replace(Parameter.USER, username)
                 + "?"
                 + Parameter.PAGE + page
                 + "&"
                 + Parameter.PER_PAGE + perPage;
-
-        try {
-            response = http.get(url, TAG);
-            if (response.code() != Parameter.STATUS_200) {
-                throw new ResponseException(response.toString());
-            }
-
-            users = gson.fromJson(response.body().string(), new TypeToken<List<User>>(){}.getType());
-        } catch (IOException i) {
-            throw new ResponseException(i.getMessage(), i);
-        }
-
-        return users;
+        return unit.getUsers(url, TAG);
     }
 
     public List<User> getUserFollowing(int id) throws ResponseException {
@@ -180,37 +127,19 @@ public class UserService {
         return getUserFollowing(username, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
     }
 
-    // TODO; test
     public List<User> getUserFollowing(String username, int page, int perPage) throws ResponseException {
-        Response response;
-
-        List<User> users;
-
         String url = USER_FOLLOWING.replace(Parameter.USER, username)
                 + "?"
                 + Parameter.PAGE + page
                 + "&"
                 + Parameter.PER_PAGE + perPage;
-
-        try {
-            response = http.get(url, TAG);
-            if (response.code() != Parameter.STATUS_200) {
-                throw new ResponseException(response.toString());
-            }
-
-            users = gson.fromJson(response.body().string(), new TypeToken<List<User>>(){}.getType());
-        } catch (IOException i) {
-            throw new ResponseException(i.getMessage(), i);
-        }
-
-        return users;
+        return unit.getUsers(url, TAG);
     }
 
     public boolean getRelationShip(int id, int targetId) throws ResponseException {
         return getRelationShip(String.valueOf(id), String.valueOf(targetId));
     }
 
-    // TODO: test
     public boolean getRelationShip(String username, String targetUsername) throws ResponseException {
         String url = RELATIONSHIP.replace(Parameter.USER, username).replace(Parameter.TARGET_USER, targetUsername);
 
@@ -240,30 +169,13 @@ public class UserService {
         return getUserLikes(username, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
     }
 
-    // TODO: test
     public List<Shot> getUserLikes(String username, int page, int perPage) throws ResponseException {
-        Response response;
-
-        List<Shot> shots;
-
         String url = USER_LIKES.replace(Parameter.USER, username)
                 + "?"
                 + Parameter.PAGE + page
                 + "&"
                 + Parameter.PER_PAGE + perPage;
-
-        try {
-            response = http.get(url, TAG);
-            if (response.code() != Parameter.STATUS_204) {
-                throw new ResponseException(response.toString());
-            }
-
-            shots = gson.fromJson(response.body().string(), new TypeToken<List<Shot>>(){}.getType());
-        } catch (IOException i) {
-            throw new ResponseException(i.getMessage(), i);
-        }
-
-        return shots;
+        return unit.getShots(url, TAG);
     }
 
     public List<Project> getUserProjects(int id) throws ResponseException {
@@ -278,176 +190,117 @@ public class UserService {
         return getUserProjects(username, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
     }
 
-    // TODO: test
     public List<Project> getUserProjects(String username, int page, int perPage) throws ResponseException {
-        Response response;
-
-        List<Project> projects;
-
         String url = USER_PROJECTS.replace(Parameter.USER, username)
                 + "?"
                 + Parameter.PAGE + page
                 + "&"
-                + Parameter.PER_PAGE + page;
+                + Parameter.PER_PAGE + perPage;
+        return unit.getProjects(url, TAG);
+    }
 
-        try {
-            response = http.get(url, TAG);
-            if (response.code() != Parameter.STATUS_200) {
-                throw new ResponseException(response.toString());
-            }
+    public List<Shot> getUserShots(int id) throws ResponseException {
+        return getUserShots(id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+    }
 
-            projects = gson.fromJson(response.body().string(), new TypeToken<List<Project>>(){}.getType());
-        } catch (IOException i) {
-            throw new ResponseException(i.getMessage(), i);
-        }
+    public List<Shot> getUserShots(int id, int page, int perPage) throws ResponseException {
+        return getUserShots(String.valueOf(id), page, perPage);
+    }
 
-        return projects;
+    public List<Shot> getUserShots(String username) throws ResponseException {
+        return getUserShots(username, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+    }
+
+    public List<Shot> getUserShots(String username, int page, int perPage) throws ResponseException {
+        String url = USER_SHOTS.replace(Parameter.USER, username)
+                + "?"
+                + Parameter.PAGE + page
+                + "&"
+                + Parameter.PER_PAGE + perPage;
+        return unit.getShots(url, TAG);
+    }
+
+    public List<Team> getUserTeams(int id) throws ResponseException {
+        return getUserTeams(id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+    }
+
+    public List<Team> getUserTeams(int id, int page, int perPage) throws ResponseException {
+        return getUserTeams(String.valueOf(id), page, perPage);
+    }
+
+    public List<Team> getUserTeams(String username) throws ResponseException {
+        return getUserTeams(username, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+    }
+
+    public List<Team> getUserTeams(String username, int page, int perPage) throws ResponseException {
+        String url = USER_TEAMS.replace(Parameter.USER, username)
+                + "?"
+                + Parameter.PAGE + page
+                + "&"
+                + Parameter.PER_PAGE + perPage;
+        return unit.getTeams(url, TAG);
     }
 
     public User getAuthenticatedUser() throws ResponseException {
-        Response response;
-
-        User user;
-
-        try {
-            response = http.get(AUTHENTICATED_USER, TAG);
-            if (response.code() != Parameter.STATUS_200) {
-                throw new ResponseException(response.toString());
-            }
-
-            user = gson.fromJson(response.body().string(), User.class);
-        } catch (IOException i) {
-            throw new ResponseException(i.getMessage(), i);
-        }
-
-        return user;
+        return unit.getUser(AUTHENTICATED_USER, TAG);
     }
 
     public List<Bucket> getAuthenticatedUserBuckets() throws ResponseException {
         return getAuthenticatedUserBuckets(Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
     }
 
-    // TODO: test
     public List<Bucket> getAuthenticatedUserBuckets(int page, int perPage) throws ResponseException {
-        Response response;
-
-        List<Bucket> buckets;
-
         String url = AUTHENTICATED_USER_BUCKETS
                 + "?"
                 + Parameter.PAGE + page
                 + "&"
                 + Parameter.PER_PAGE + perPage;
-
-        try {
-            response = http.get(url, TAG);
-            if (response.code() != Parameter.STATUS_200) {
-                throw new ResponseException(response.toString());
-            }
-
-            buckets = gson.fromJson(response.body().string(), new TypeToken<List<Bucket>>(){}.getType());
-        } catch (IOException i) {
-            throw new ResponseException(i.getMessage(), i);
-        }
-
-        return buckets;
+        return unit.getBuckets(url, TAG);
     }
 
     public List<User> getAuthenticatedUserFollowers() throws ResponseException {
         return getAuthenticatedUserFollowers(Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
     }
 
-    // TODO; test
     public List<User> getAuthenticatedUserFollowers(int page, int perPage) throws ResponseException {
-        Response response;
-
-        List<User> users;
-
         String url = AUTHENTICATED_USER_FOLLOWERS
                 + "?"
                 + Parameter.PAGE + page
                 + "&"
                 + Parameter.PER_PAGE + perPage;
-
-        try {
-            response = http.get(url, TAG);
-            if (response.code() != Parameter.STATUS_200) {
-                throw new ResponseException(response.toString());
-            }
-
-            users = gson.fromJson(response.body().string(), new TypeToken<List<User>>(){}.getType());
-        } catch (IOException i) {
-            throw new ResponseException(i.getMessage(), i);
-        }
-
-        return users;
+        return unit.getUsers(url, TAG);
     }
 
     public List<User> getAuthenticatedUserFollowing() throws ResponseException {
         return getAuthenticatedUserFollowing(Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
     }
 
-    // TODO; test
     public List<User> getAuthenticatedUserFollowing(int page, int perPage) throws ResponseException {
-        Response response;
-
-        List<User> users;
-
         String url = AUTHENTICATED_USER_FOLLOWING
                 + "?"
                 + Parameter.PAGE + page
                 + "&"
                 + Parameter.PER_PAGE + perPage;
-
-        try {
-            response = http.get(url, TAG);
-            if (response.code() != Parameter.STATUS_200) {
-                throw new ResponseException(response.toString());
-            }
-
-            users = gson.fromJson(response.body().string(), new TypeToken<List<User>>(){}.getType());
-        } catch (IOException i) {
-            throw new ResponseException(i.getMessage(), i);
-        }
-
-        return users;
+        return unit.getUsers(url, TAG);
     }
 
     public List<Shot> getAuthenticatedUserFollowingShots() throws ResponseException {
         return getAuthenticatedUserFollowingShots(Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
     }
 
-    // TODO: test
     public List<Shot> getAuthenticatedUserFollowingShots(int page, int perPage) throws ResponseException {
-        Response response;
-
-        List<Shot> shots;
-
         String url = AUTHENTICATED_USER_FOLLOWING_SHOTS
                 + "?"
                 + Parameter.PAGE + page
                 + "&"
                 + Parameter.PER_PAGE + perPage;
-
-        try {
-            response = http.get(url, TAG);
-            if (response.code() != Parameter.STATUS_200) {
-                throw new ResponseException(response.toString());
-            }
-
-            shots = gson.fromJson(response.body().string(), new TypeToken<List<Shot>>(){}.getType());
-        } catch (IOException i) {
-            throw new ResponseException(i.getMessage(), i);
-        }
-
-        return shots;
+        return unit.getShots(url, TAG);
     }
 
     public boolean isFollowing(int id) throws ResponseException {
         return isFollowing(String.valueOf(id));
     }
 
-    // TODO: test
     public boolean isFollowing(String username) throws ResponseException {
         String url = IS_FOLLOWING.replace(Parameter.USER, username);
 
@@ -469,7 +322,6 @@ public class UserService {
         follow(String.valueOf(id));
     }
 
-    // TODO: test
     public void follow(String username) throws ResponseException {
         String url = FOLLOW.replace(Parameter.USER, username);
 
@@ -487,7 +339,6 @@ public class UserService {
         unfollow(String.valueOf(id));
     }
 
-    // TODO: test
     public void unfollow(String username) throws ResponseException {
         String url = UNFOLLOW.replace(Parameter.USER, username);
 
@@ -499,5 +350,18 @@ public class UserService {
         } catch (IOException i) {
             throw new ResponseException(i.getMessage(), i);
         }
+    }
+
+    public List<Shot> getAuthenticatedUserLikes() throws ResponseException {
+        return getAuthenticatedUserLikes(Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+    }
+
+    public List<Shot> getAuthenticatedUserLikes(int page, int perPage) throws ResponseException {
+        String url = AUTHENTICATED_USER_LIKES
+                + "?"
+                + Parameter.PAGE + page
+                + "&"
+                + Parameter.PER_PAGE + perPage;
+        return unit.getShots(url, TAG);
     }
 }
