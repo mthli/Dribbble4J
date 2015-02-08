@@ -33,7 +33,9 @@ public class Parameter {
 
     public static final String ID = "{id}";
 
-    public static final String USER = "{user}";
-
     public static final String TARGET_USER = "{target_user}";
+
+    public static final String TEAM = "{team}";
+
+    public static final String USER = "{user}";
 }

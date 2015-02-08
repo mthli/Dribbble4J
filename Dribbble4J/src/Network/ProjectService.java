@@ -31,7 +31,15 @@ public class ProjectService {
     }
 
     public List<Shot> getProjectShots(int id) throws ResponseException {
-        String url = PROJECT_SHOTS.replace(Parameter.ID, String.valueOf(id));
+        return getProjectShots(id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+    }
+
+    public List<Shot> getProjectShots(int id, int page, int perPage) throws ResponseException {
+        String url = PROJECT_SHOTS.replace(Parameter.ID, String.valueOf(id))
+                + "?"
+                + Parameter.PAGE + page
+                + "&"
+                + Parameter.PER_PAGE + perPage;
         return unit.getShots(url, TAG);
     }
 }
