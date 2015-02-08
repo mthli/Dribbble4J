@@ -39,6 +39,8 @@ public class Parameter {
 
     public static final String BEARER = " Bearer ";
 
+    public static final String SPACE = "&#8230;";
+
     public static final String ID = "{id}";
 
     public static final String TARGET_USER = "{target_user}";

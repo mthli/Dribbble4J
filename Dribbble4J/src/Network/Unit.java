@@ -22,20 +22,60 @@ public class Unit {
         return gson.fromJson(getJson(url, tag), Bucket.class);
     }
 
+    public Bucket getBucket(Response response) throws ResponseException {
+        try {
+            return gson.fromJson(response.body().string(), Bucket.class);
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
     public Project getProject(String url, Object tag) throws ResponseException {
         return gson.fromJson(getJson(url, tag), Project.class);
+    }
+
+    public Project getProject(Response response) throws ResponseException {
+        try {
+            return gson.fromJson(response.body().string(), Project.class);
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
     }
 
     public Shot getShot(String url, Object tag) throws ResponseException {
         return gson.fromJson(getJson(url, tag), Shot.class);
     }
 
+    public Shot getShot(Response response) throws ResponseException {
+        try {
+            return gson.fromJson(response.body().string(), Shot.class);
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
     public Team getTeam(String url, Object tag) throws ResponseException {
         return gson.fromJson(getJson(url, tag), Team.class);
     }
 
+    public Team getTeam(Response response) throws ResponseException {
+        try {
+            return gson.fromJson(response.body().string(), Team.class);
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
     public User getUser(String url, Object tag) throws ResponseException {
         return gson.fromJson(getJson(url, tag), User.class);
+    }
+
+    public User getUser(Response response) throws ResponseException {
+        try {
+            return gson.fromJson(response.body().string(), User.class);
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
     }
 
     public List<Bucket> getBuckets(String url, Object tag) throws ResponseException {
