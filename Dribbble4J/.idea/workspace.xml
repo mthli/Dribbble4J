@@ -28,18 +28,63 @@
       <file leaf-file-name="UserService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Network/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.80099505" vertical-offset="447" max-vertical-offset="1050">
-              <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.7263682" vertical-offset="1062" max-vertical-offset="1665">
+              <caret line="320" column="0" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
               <folding>
                 <element signature="method#UserService#0;class#UserService#0" expanded="false" />
                 <element signature="method#getUser#0;class#UserService#0" expanded="false" />
                 <element signature="method#getUser#1;class#UserService#0" expanded="false" />
-                <element signature="method#getAuthenticatedUser#0;class#UserService#0" expanded="false" />
                 <element signature="method#getUserBuckets#0;class#UserService#0" expanded="false" />
                 <element signature="method#getUserBuckets#1;class#UserService#0" expanded="false" />
                 <element signature="method#getUserBuckets#2;class#UserService#0" expanded="false" />
                 <element signature="method#getUserBuckets#3;class#UserService#0" expanded="false" />
+                <element signature="method#getUserFollowers#0;class#UserService#0" expanded="false" />
+                <element signature="method#getUserFollowers#1;class#UserService#0" expanded="false" />
+                <element signature="method#getUserFollowers#2;class#UserService#0" expanded="false" />
+                <element signature="method#getUserFollowers#3;class#UserService#0" expanded="false" />
+                <element signature="method#getUserFollowing#0;class#UserService#0" expanded="false" />
+                <element signature="method#getUserFollowing#1;class#UserService#0" expanded="false" />
+                <element signature="method#getUserFollowing#2;class#UserService#0" expanded="false" />
+                <element signature="method#getUserFollowing#3;class#UserService#0" expanded="false" />
+                <element signature="method#getRelationShip#0;class#UserService#0" expanded="false" />
+                <element signature="method#getRelationShip#1;class#UserService#0" expanded="false" />
+                <element signature="method#getAuthenticatedUser#0;class#UserService#0" expanded="false" />
+                <element signature="method#getAuthenticatedUserBuckets#0;class#UserService#0" expanded="false" />
+                <element signature="method#getAuthenticatedUserBuckets#1;class#UserService#0" expanded="false" />
+                <element signature="method#getAuthenticatedUserFollowers#0;class#UserService#0" expanded="false" />
+                <element signature="method#getAuthenticatedUserFollowers#1;class#UserService#0" expanded="false" />
+                <element signature="method#getAuthenticatedUserFollowing#0;class#UserService#0" expanded="false" />
+                <element signature="method#getAuthenticatedUserFollowing#1;class#UserService#0" expanded="false" />
+                <element signature="method#getAuthenticatedUserFollowingShots#0;class#UserService#0" expanded="false" />
+                <element signature="method#getAuthenticatedUserFollowingShots#1;class#UserService#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Http.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Network/Http.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="795">
+              <caret line="62" column="70" selection-start-line="62" selection-start-column="70" selection-end-line="62" selection-end-column="70" />
+              <folding>
+                <element signature="method#Http#0;class#Http#0" expanded="false" />
+                <element signature="method#get#0;class#Http#0" expanded="false" />
+                <element signature="method#post#0;class#Http#0" expanded="false" />
+                <element signature="method#put#0;class#Http#0" expanded="false" />
+                <element signature="method#patch#0;class#Http#0" expanded="false" />
+                <element signature="method#delete#0;class#Http#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parameter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Network/Parameter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="765">
+              <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,11 +140,11 @@
         <option value="$PROJECT_DIR$/src/Network/Https.java" />
         <option value="$PROJECT_DIR$/src/Exception/ResponseExption.java" />
         <option value="$PROJECT_DIR$/src/Exception/ResponseException.java" />
-        <option value="$PROJECT_DIR$/src/Network/Http.java" />
         <option value="$PROJECT_DIR$/src/Test/Test.java" />
+        <option value="$PROJECT_DIR$/src/Dribbble/Dribbble.java" />
         <option value="$PROJECT_DIR$/src/Network/Parameter.java" />
         <option value="$PROJECT_DIR$/src/Network/UserService.java" />
-        <option value="$PROJECT_DIR$/src/Dribbble/Dribbble.java" />
+        <option value="$PROJECT_DIR$/src/Network/Http.java" />
       </list>
     </option>
   </component>
@@ -487,7 +532,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.5949764" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="818" y="76" width="366" height="630" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.5949764" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="818" y="76" width="366" height="630" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43968254" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -541,7 +586,7 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -634,32 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/Http.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="900">
-          <caret line="186" column="0" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
-          <folding>
-            <element signature="method#Http#0;class#Http#0" expanded="false" />
-            <element signature="method#get#0;class#Http#0" expanded="false" />
-            <element signature="method#post#0;class#Http#0" expanded="false" />
-            <element signature="method#post#1;class#Http#0" expanded="false" />
-            <element signature="method#post#2;class#Http#0" expanded="false" />
-            <element signature="method#put#0;class#Http#0" expanded="false" />
-            <element signature="method#put#1;class#Http#0" expanded="false" />
-            <element signature="method#put#2;class#Http#0" expanded="false" />
-            <element signature="method#delete#0;class#Http#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/Parameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="765">
-          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09950249" vertical-offset="0" max-vertical-offset="603">
@@ -700,19 +719,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Network/Parameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="765">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Network/Http.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="795">
+          <caret line="62" column="70" selection-start-line="62" selection-start-column="70" selection-end-line="62" selection-end-column="70" />
+          <folding>
+            <element signature="method#Http#0;class#Http#0" expanded="false" />
+            <element signature="method#get#0;class#Http#0" expanded="false" />
+            <element signature="method#post#0;class#Http#0" expanded="false" />
+            <element signature="method#put#0;class#Http#0" expanded="false" />
+            <element signature="method#patch#0;class#Http#0" expanded="false" />
+            <element signature="method#delete#0;class#Http#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Network/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80099505" vertical-offset="447" max-vertical-offset="1050">
-          <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.7263682" vertical-offset="1062" max-vertical-offset="1665">
+          <caret line="320" column="0" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
           <folding>
             <element signature="method#UserService#0;class#UserService#0" expanded="false" />
             <element signature="method#getUser#0;class#UserService#0" expanded="false" />
             <element signature="method#getUser#1;class#UserService#0" expanded="false" />
-            <element signature="method#getAuthenticatedUser#0;class#UserService#0" expanded="false" />
             <element signature="method#getUserBuckets#0;class#UserService#0" expanded="false" />
             <element signature="method#getUserBuckets#1;class#UserService#0" expanded="false" />
             <element signature="method#getUserBuckets#2;class#UserService#0" expanded="false" />
             <element signature="method#getUserBuckets#3;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowers#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowers#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowers#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowers#3;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowing#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowing#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowing#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowing#3;class#UserService#0" expanded="false" />
+            <element signature="method#getRelationShip#0;class#UserService#0" expanded="false" />
+            <element signature="method#getRelationShip#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUser#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserBuckets#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserBuckets#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowers#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowers#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowing#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowing#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowingShots#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowingShots#1;class#UserService#0" expanded="false" />
           </folding>
         </state>
       </provider>

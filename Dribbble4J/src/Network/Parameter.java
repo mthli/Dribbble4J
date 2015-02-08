@@ -31,7 +31,7 @@ public class Parameter {
 
     public static final String PER_PAGE = "per_page=";
 
-    public static final int DEFAULT_PER_PAGE = 12;
+    public static final int DEFAULT_PER_PAGE = 30;
 
     public static final String SCHEMA = "https://api.dribbble.com/v1";
 
