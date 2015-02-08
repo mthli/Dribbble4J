@@ -9,6 +9,8 @@ public class Parameter {
 
     public static final int STATUS_400 = 400;
 
+    public static final int STATUS_403 = 403;
+
     public static final int STATUS_404 = 404;
 
     public static final int STATUS_422 = 422;
@@ -28,6 +30,8 @@ public class Parameter {
     public static final String AUTHORIZATION = "Authorization";
 
     public static final String BEARER = " Bearer ";
+
+    public static final String ID = "{id}";
 
     public static final String USER = "{user}";
 

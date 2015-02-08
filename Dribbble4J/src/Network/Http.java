@@ -71,6 +71,10 @@ public class Http {
         return client.newCall(request).execute();
     }
 
+    public void cancel(Object tag) {
+        client.cancel(tag);
+    }
+
     public Cache getCache() {
         return client.getCache();
     }
@@ -109,9 +113,5 @@ public class Http {
 
     public void setProxy(Proxy proxy) {
         client.setProxy(proxy);
-    }
-
-    public void cancel(Object tag) {
-        client.cancel(tag);
     }
 }

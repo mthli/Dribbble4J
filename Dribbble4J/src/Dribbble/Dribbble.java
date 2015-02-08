@@ -43,7 +43,7 @@ public class Dribbble {
         this.http = new Http(accessToken);
 
         // TODO: more
-
+        this.projectService = new ProjectService(this.http);
         this.userService = new UserService(this.http);
     }
 }
