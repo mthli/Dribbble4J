@@ -43,7 +43,9 @@ public class Dribbble {
         this.http = new Http(accessToken);
 
         // TODO: more
+        this.bucketService = new BucketService(this.http);
         this.projectService = new ProjectService(this.http);
+        this.teamService = new TeamService(this.http);
         this.userService = new UserService(this.http);
     }
 }
