@@ -54,6 +54,18 @@ public class Unit {
         }
     }
 
+    public Attachment getAttachment(String url, Object tag) throws ResponseException {
+        return gson.fromJson(getJson(url, tag), Attachment.class);
+    }
+
+    public Attachment getAttachment(Response response) throws ResponseException {
+        try {
+            return gson.fromJson(response.body().string(), Attachment.class);
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
     public Team getTeam(String url, Object tag) throws ResponseException {
         return gson.fromJson(getJson(url, tag), Team.class);
     }
@@ -82,20 +94,60 @@ public class Unit {
         return gson.fromJson(getJson(url, tag), new TypeToken<List<Bucket>>(){}.getType());
     }
 
+    public List<Bucket> getBuckets(Response response) throws ResponseException {
+        try {
+            return gson.fromJson(response.body().string(), new TypeToken<List<Bucket>>(){}.getType());
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
     public List<Project> getProjects(String url, Object tag) throws ResponseException {
         return gson.fromJson(getJson(url, tag), new TypeToken<List<Project>>(){}.getType());
+    }
+
+    public List<Project> getProjects(Response response) throws ResponseException {
+        try {
+            return gson.fromJson(response.body().string(), new TypeToken<List<Project>>(){}.getType());
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
     }
 
     public List<Shot> getShots(String url, Object tag) throws ResponseException {
         return gson.fromJson(getJson(url, tag), new TypeToken<List<Shot>>(){}.getType());
     }
 
+    public List<Shot> getShots(Response response) throws ResponseException {
+        try {
+            return gson.fromJson(response.body().string(), new TypeToken<List<Shot>>(){}.getType());
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
     public List<Team> getTeams(String url, Object tag) throws ResponseException {
         return gson.fromJson(getJson(url, tag), new TypeToken<List<Team>>(){}.getType());
     }
 
+    public List<Team> getTeams(Response response) throws ResponseException {
+        try {
+            return gson.fromJson(response.body().string(), new TypeToken<List<Team>>(){}.getType());
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
     public List<User> getUsers(String url, Object tag) throws ResponseException {
         return gson.fromJson(getJson(url, tag), new TypeToken<List<User>>(){}.getType());
+    }
+
+    public List<User> getUsers(Response response) throws ResponseException {
+        try {
+            return gson.fromJson(response.body().string(), new TypeToken<List<User>>(){}.getType());
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
     }
 
     private String getJson(String url, Object tag) throws ResponseException {

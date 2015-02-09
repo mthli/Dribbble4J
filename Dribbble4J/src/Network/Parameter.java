@@ -7,12 +7,16 @@ public class Parameter {
 
     public static final String BEARER = " Bearer ";
 
+    public static final String FILE = "file";
+
     public static final String SPACE = "%20";
 
 
     public static final String ID = "{id}";
 
     public static final String TARGET_USER = "{target_user}";
+
+    public static final String SHOT = "{shot}";
 
     public static final String TEAM = "{team}";
 
@@ -58,6 +62,8 @@ public class Parameter {
     public static final String TAGS = "tags=";
 
     public static final String TEAM_ID = "team_id=";
+
+    public static final String TITLE = "title=";
 
 
     public static final String LIST = "list=";
