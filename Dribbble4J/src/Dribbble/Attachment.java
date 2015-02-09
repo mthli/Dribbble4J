@@ -1,6 +1,20 @@
 package Dribbble;
 
 public class Attachment {
+    public static final String ID = "id";
+
+    public static final String URL = "url";
+
+    public static final String THUMBNAIL_URL = "thumbnail_url";
+
+    public static final String SIZE = "size";
+
+    public static final String CONTENT_TYPE = "content_type";
+
+    public static final String VIEWS_COUNT = "views_count";
+
+    public static final String CREATED_AT = "created_at";
+
     private int id;
     public int getId() {
         return id;
