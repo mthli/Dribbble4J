@@ -34,25 +34,12 @@ public class BucketService {
         return unit.getBucket(url, TAG);
     }
 
-    public Bucket createBucket(String name) throws ResponseException {
-        String url = CREATE + "?" + Parameter.NAME + name;
-        url = url.replaceAll(" +", "%20");
-
-        try {
-            Response response = http.post(null, url, TAG);
-            if (response.code() != Parameter.STATUS_201) {
-                throw new ResponseException(response.toString());
-            }
-
-            return unit.getBucket(response);
-        } catch (IOException i) {
-            throw new ResponseException(i.getMessage(), i);
-        }
-    }
-
     public Bucket createBucket(String name, String description) throws ResponseException {
-        String url = CREATE + "?" + Parameter.NAME + name + "&" + Parameter.DESCRIPTION + description;
-        url = url.replaceAll(" +", "%20");
+        String url = CREATE + "?" + Parameter.NAME + name;
+        if (description != null && description.length() > 0) {
+            url = url + "&" + Parameter.DESCRIPTION + description;
+        }
+        url = url.replaceAll(" +", Parameter.SPACE);
 
         try {
             Response response = http.post(null, url, TAG);
@@ -66,29 +53,8 @@ public class BucketService {
         }
     }
 
-    public Bucket updateBucket(int id, String name) throws ResponseException {
-        String url = BUCKET.replace(Parameter.ID, String.valueOf(id)) + "?" + Parameter.NAME + name;
-        url = url.replaceAll(" +", "%20");
-
-        try {
-            Response response = http.put(null, url, TAG);
-            if (response.code() != Parameter.STATUS_200) {
-                throw new ResponseException(response.toString());
-            }
-
-            return unit.getBucket(response);
-        } catch (IOException i) {
-            throw new ResponseException(i.getMessage(), i);
-        }
-    }
-
-    public Bucket updateBucket(int id, String name, String description) throws ResponseException {
-        String url = BUCKET.replace(Parameter.ID, String.valueOf(id))
-                + "?"
-                + Parameter.NAME + name
-                + "&"
-                + Parameter.DESCRIPTION + description;
-        url = url.replaceAll(" +", "%20");
+    public Bucket updateBucket(int id) throws ResponseException {
+        String url = BUCKET.replace(Parameter.ID, String.valueOf(id));
 
         try {
             Response response = http.put(null, url, TAG);

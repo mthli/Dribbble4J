@@ -41,10 +41,9 @@ public class Dribbble {
     public Dribbble(String accessToken) {
         this.accessToken = accessToken;
         this.http = new Http(accessToken);
-
-        // TODO: more
         this.bucketService = new BucketService(this.http);
         this.projectService = new ProjectService(this.http);
+        this.shotService = new ShotService(this.http);
         this.teamService = new TeamService(this.http);
         this.userService = new UserService(this.http);
     }
