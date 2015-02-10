@@ -66,6 +66,30 @@ public class Unit {
         }
     }
 
+    public Comment getComment(String url, Object tag) throws ResponseException {
+        return gson.fromJson(getJson(url, tag), Comment.class);
+    }
+
+    public Comment getComment(Response response) throws ResponseException {
+        try {
+            return gson.fromJson(response.body().string(), Comment.class);
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
+    public Like getLike(String url, Object tag) throws ResponseException {
+        return gson.fromJson(getJson(url, tag), Like.class);
+    }
+
+    public Like getLike(Response response) throws ResponseException {
+        try {
+            return gson.fromJson(response.body().string(), Like.class);
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
     public Rebound getRebound(String url, Object tag) throws ResponseException {
         return gson.fromJson(getJson(url, tag), Rebound.class);
     }
@@ -158,13 +182,13 @@ public class Unit {
         }
     }
 
-    public Like getLike(String url, Object tag) throws ResponseException {
-        return gson.fromJson(getJson(url, tag), Like.class);
+    public List<Comment> getComments(String url, Object tag) throws ResponseException {
+        return gson.fromJson(getJson(url, tag), new TypeToken<List<Comment>>(){}.getType());
     }
 
-    public Like getLike(Response response) throws ResponseException {
+    public List<Comment> getComments(Response response) throws ResponseException {
         try {
-            return gson.fromJson(response.body().string(), Like.class);
+            return gson.fromJson(response.body().string(), new TypeToken<List<Comment>>(){}.getType());
         } catch (IOException i) {
             throw new ResponseException(i.getMessage(), i);
         }
