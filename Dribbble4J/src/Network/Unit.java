@@ -158,6 +158,30 @@ public class Unit {
         }
     }
 
+    public Like getLike(String url, Object tag) throws ResponseException {
+        return gson.fromJson(getJson(url, tag), Like.class);
+    }
+
+    public Like getLike(Response response) throws ResponseException {
+        try {
+            return gson.fromJson(response.body().string(), Like.class);
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
+    public List<Like> getLikes(String url, Object tag) throws ResponseException {
+        return gson.fromJson(getJson(url, tag), new TypeToken<List<Like>>(){}.getType());
+    }
+
+    public List<Like> getLikes(Response response) throws ResponseException {
+        try {
+            return gson.fromJson(response.body().string(), new TypeToken<List<Like>>(){}.getType());
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
     public List<Rebound> getRebounds(String url, Object tag) throws ResponseException {
         return gson.fromJson(getJson(url, tag), new TypeToken<List<Rebound>>(){}.getType());
     }
