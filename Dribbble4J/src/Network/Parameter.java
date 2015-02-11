@@ -53,6 +53,8 @@ public class Parameter {
     public static final int DEFAULT_PER_PAGE = 30;
 
 
+    public static final String BODY = "body=";
+
     public static final String NAME = "name=";
 
     public static final String DESCRIPTION = "description=";

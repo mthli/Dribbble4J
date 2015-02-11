@@ -1,10 +1,10 @@
 package Network;
 
-import Dribbble.Attachment;
-import Dribbble.Bucket;
-import Dribbble.Shot;
+import Dribbble.*;
+import com.squareup.okhttp.Response;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,6 +20,14 @@ public class ShotService {
     private static final String SHOT_ATTACHMENTS = Parameter.SCHEMA + "/shots/" + Parameter.ID + "/attachments";
 
     private static final String SHOT_BUCKETS = Parameter.SCHEMA + "/shots/" + Parameter.ID + "/buckets";
+
+    private static final String SHOT_COMMENT = Parameter.SCHEMA + "/shots/" + Parameter.SHOT + "/comments/" + Parameter.ID;
+
+    private static final String SHOT_COMMENT_LIKE = Parameter.SCHEMA + "/shots/" + Parameter.SHOT + "/comments/" + Parameter.ID + "/like";
+
+    private static final String SHOT_COMMENTS = Parameter.SCHEMA + "/shots/" + Parameter.SHOT + "/comments";
+
+    private static final String SHOT_COMMENT_LIKES = Parameter.SCHEMA + "/shots/" + Parameter.SHOT + "/comments/" + Parameter.ID + "/likes";
 
     private Http http;
 
@@ -109,6 +117,129 @@ public class ShotService {
                 + "&"
                 + Parameter.PER_PAGE + perPage;
         return unit.getBuckets(url, TAG);
+    }
+
+    public Comment getComment(int shot, int id) throws ResponseException {
+        String url = SHOT_COMMENT.replace(Parameter.SHOT, String.valueOf(shot)).replace(Parameter.ID, String.valueOf(id));
+        return unit.getComment(url, TAG);
+    }
+
+    public Comment createComment(int shot, String body) throws ResponseException {
+        String url = SHOT_COMMENTS.replace(Parameter.SHOT, String.valueOf(shot))
+                + "?"
+                + Parameter.BODY + body;
+        url = url.replaceAll(" +", Parameter.SPACE);
+
+        try {
+            Response response = http.post(null, url, TAG);
+            if (response.code() != Parameter.STATUS_201) {
+                throw new ResponseException(response.toString());
+            }
+
+            return unit.getComment(response);
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
+    public Comment updateComment(int shot, int id) throws ResponseException {
+        String url = SHOT_COMMENT.replace(Parameter.SHOT, String.valueOf(shot)).replace(Parameter.ID, String.valueOf(id));
+
+        try {
+            Response response = http.put(null, url, TAG);
+            if (response.code() != Parameter.STATUS_200) {
+                throw new ResponseException(response.toString());
+            }
+
+            return unit.getComment(response);
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
+    public void deleteComment(int shot, int id) throws ResponseException {
+        String url = SHOT_COMMENT.replace(Parameter.SHOT, String.valueOf(shot)).replace(Parameter.ID, String.valueOf(id));
+
+        try {
+            Response response = http.delete(url, TAG);
+            if (response.code() != Parameter.STATUS_204) {
+                throw new ResponseException(response.toString());
+            }
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
+    public boolean isCommentLike(int shot, int id) throws ResponseException {
+        String url = SHOT_COMMENT_LIKE.replace(Parameter.SHOT, String.valueOf(shot)).replace(Parameter.ID, String.valueOf(id));
+
+        try {
+            Response response = http.get(url, TAG);
+            if (response.code() == Parameter.STATUS_200) {
+                return true;
+            } else if (response.code() == Parameter.STATUS_404) {
+                return false;
+            } else {
+                throw new ResponseException(response.toString());
+            }
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
+    public Comment likeComment(int shot, int id) throws ResponseException {
+        String url = SHOT_COMMENT_LIKE.replace(Parameter.SHOT, String.valueOf(shot)).replace(Parameter.ID, String.valueOf(id));
+
+        try {
+            Response response = http.post(null, url, TAG);
+            if (response.code() != Parameter.STATUS_201) {
+                throw new ResponseException(response.toString());
+            }
+
+            return unit.getComment(response);
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
+    public void unlikeComment(int shot, int id) throws ResponseException {
+        String url = SHOT_COMMENT_LIKE.replace(Parameter.SHOT, String.valueOf(shot)).replace(Parameter.ID, String.valueOf(id));
+
+        try {
+            Response response = http.delete(url, TAG);
+            if (response.code() != Parameter.STATUS_204) {
+                throw new ResponseException(response.toString());
+            }
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
+    public List<Comment> getShotComments(int shot) throws ResponseException {
+        return getShotComments(shot, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+    }
+
+    public List<Comment> getShotComments(int shot, int page, int perPage) throws ResponseException {
+        String url = SHOT_COMMENTS.replace(Parameter.SHOT, String.valueOf(shot))
+                + "?"
+                + Parameter.PAGE + page
+                + "&"
+                + Parameter.PER_PAGE + perPage;
+        return unit.getComments(url, TAG);
+    }
+
+    public List<Like> getShotCommentLikes(int shot, int id) throws ResponseException {
+        return getShotCommentLikes(shot, id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+    }
+
+    public List<Like> getShotCommentLikes(int shot, int id, int page, int perPage) throws ResponseException {
+        String url = SHOT_COMMENT_LIKES.replace(Parameter.SHOT, String.valueOf(shot))
+                .replace(Parameter.ID, String.valueOf(id))
+                + "?"
+                + Parameter.PAGE + page
+                + "&"
+                + Parameter.PER_PAGE + perPage;
+        return unit.getLikes(url, TAG);
     }
 
     public interface Player {
