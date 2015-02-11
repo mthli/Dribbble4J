@@ -29,6 +29,10 @@ public class ShotService {
 
     private static final String SHOT_COMMENT_LIKES = Parameter.SCHEMA + "/shots/" + Parameter.SHOT + "/comments/" + Parameter.ID + "/likes";
 
+    private static final String SHOT_LIKE = Parameter.SCHEMA + "/shots/" + Parameter.ID + "/like";
+
+    private static final String SHOT_LIKES = Parameter.SCHEMA + "/shots/" + Parameter.ID + "/likes";
+
     private Http http;
 
     private Unit unit;
@@ -235,6 +239,64 @@ public class ShotService {
     public List<Like> getShotCommentLikes(int shot, int id, int page, int perPage) throws ResponseException {
         String url = SHOT_COMMENT_LIKES.replace(Parameter.SHOT, String.valueOf(shot))
                 .replace(Parameter.ID, String.valueOf(id))
+                + "?"
+                + Parameter.PAGE + page
+                + "&"
+                + Parameter.PER_PAGE + perPage;
+        return unit.getLikes(url, TAG);
+    }
+
+    public boolean isShotLike(int id) throws ResponseException {
+        String url = SHOT_LIKE.replace(Parameter.ID, String.valueOf(id));
+
+        try {
+            Response response = http.get(url, TAG);
+            if (response.code() == Parameter.STATUS_200) {
+                return true;
+            } else if (response.code() == Parameter.STATUS_404) {
+                return false;
+            } else {
+                throw new ResponseException(response.toString());
+            }
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
+    public Like likeShot(int id) throws ResponseException {
+        String url = SHOT_LIKE.replace(Parameter.ID, String.valueOf(id));
+
+        try {
+            Response response = http.post(null, url, TAG);
+            if (response.code() != Parameter.STATUS_201) {
+                throw new ResponseException(response.toString());
+            }
+
+            return unit.getLike(response);
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
+    public void unlikeShot(int id) throws ResponseException {
+        String url = SHOT_LIKE.replace(Parameter.ID, String.valueOf(id));
+
+        try {
+            Response response = http.delete(url, TAG);
+            if (response.code() != Parameter.STATUS_204) {
+                throw new ResponseException(response.toString());
+            }
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
+    public List<Like> getShotLikes(int id) throws ResponseException {
+        return getShotLikes(id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+    }
+
+    public List<Like> getShotLikes(int id, int page, int perPage) throws ResponseException {
+        String url = SHOT_LIKES.replace(Parameter.ID, String.valueOf(id))
                 + "?"
                 + Parameter.PAGE + page
                 + "&"

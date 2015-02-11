@@ -28,8 +28,8 @@
       <file leaf-file-name="ShotService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Network/ShotService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.553719" vertical-offset="730" max-vertical-offset="1335">
-              <caret line="215" column="5" selection-start-line="215" selection-start-column="5" selection-end-line="215" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.6528926" vertical-offset="940" max-vertical-offset="1545">
+              <caret line="291" column="5" selection-start-line="291" selection-start-column="5" selection-end-line="291" selection-end-column="5" />
               <folding>
                 <element signature="method#ShotService#0;class#ShotService#0" expanded="false" />
                 <element signature="method#getShot#0;class#ShotService#0" expanded="false" />
@@ -53,6 +53,11 @@
                 <element signature="method#getShotComments#1;class#ShotService#0" expanded="false" />
                 <element signature="method#getShotCommentLikes#0;class#ShotService#0" expanded="false" />
                 <element signature="method#getShotCommentLikes#1;class#ShotService#0" expanded="false" />
+                <element signature="method#isShotLike#0;class#ShotService#0" expanded="false" />
+                <element signature="method#likeShot#0;class#ShotService#0" expanded="false" />
+                <element signature="method#unlikeShot#0;class#ShotService#0" expanded="false" />
+                <element signature="method#getShotLikes#0;class#ShotService#0" expanded="false" />
+                <element signature="method#getShotLikes#1;class#ShotService#0" expanded="false" />
                 <element signature="class#Player#0;class#ShotService#0" expanded="false" />
               </folding>
             </state>
@@ -587,6 +592,11 @@
             <element signature="method#getShotComments#1;class#ShotService#0" expanded="false" />
             <element signature="method#getShotCommentLikes#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShotCommentLikes#1;class#ShotService#0" expanded="false" />
+            <element signature="method#isShotLike#0;class#ShotService#0" expanded="false" />
+            <element signature="method#likeShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#unlikeShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotLikes#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotLikes#1;class#ShotService#0" expanded="false" />
             <element signature="class#Player#0;class#ShotService#0" expanded="false" />
           </folding>
         </state>
@@ -619,6 +629,11 @@
             <element signature="method#getShotComments#1;class#ShotService#0" expanded="false" />
             <element signature="method#getShotCommentLikes#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShotCommentLikes#1;class#ShotService#0" expanded="false" />
+            <element signature="method#isShotLike#0;class#ShotService#0" expanded="false" />
+            <element signature="method#likeShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#unlikeShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotLikes#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotLikes#1;class#ShotService#0" expanded="false" />
             <element signature="class#Player#0;class#ShotService#0" expanded="false" />
           </folding>
         </state>
@@ -666,6 +681,11 @@
             <element signature="method#getShotComments#1;class#ShotService#0" expanded="false" />
             <element signature="method#getShotCommentLikes#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShotCommentLikes#1;class#ShotService#0" expanded="false" />
+            <element signature="method#isShotLike#0;class#ShotService#0" expanded="false" />
+            <element signature="method#likeShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#unlikeShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotLikes#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotLikes#1;class#ShotService#0" expanded="false" />
             <element signature="class#Player#0;class#ShotService#0" expanded="false" />
           </folding>
         </state>
@@ -1127,8 +1147,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Network/ShotService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.553719" vertical-offset="730" max-vertical-offset="1335">
-          <caret line="215" column="5" selection-start-line="215" selection-start-column="5" selection-end-line="215" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.6528926" vertical-offset="940" max-vertical-offset="1545">
+          <caret line="291" column="5" selection-start-line="291" selection-start-column="5" selection-end-line="291" selection-end-column="5" />
           <folding>
             <element signature="method#ShotService#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShot#0;class#ShotService#0" expanded="false" />
@@ -1152,6 +1172,11 @@
             <element signature="method#getShotComments#1;class#ShotService#0" expanded="false" />
             <element signature="method#getShotCommentLikes#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShotCommentLikes#1;class#ShotService#0" expanded="false" />
+            <element signature="method#isShotLike#0;class#ShotService#0" expanded="false" />
+            <element signature="method#likeShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#unlikeShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotLikes#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotLikes#1;class#ShotService#0" expanded="false" />
             <element signature="class#Player#0;class#ShotService#0" expanded="false" />
           </folding>
         </state>
