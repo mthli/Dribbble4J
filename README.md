@@ -5,7 +5,7 @@ Dribbble4J
 
 ## How to use the library?
 
-You need to get a **AccessToken** with [suitable permission(scope)]("http://developer.dribbble.com/v1/oauth/" "Dribbble API #oauth").
+You need to get a **AccessToken** with [suitable permission(scope)](http://developer.dribbble.com/v1/oauth/ "Dribbble API #oauth").
 
 And then, for example, check if you like a shot:
 
@@ -29,11 +29,11 @@ And then, for example, check if you like a shot:
 
 ### Attentions:
 
- - I'm **not a Player** of Dribbble so that some methods such as `createShot()` I have no idea to implement, you need to do that by yourself.
+ - I'm **not a Player** of Dribbble so that some methods such as `ShotService.createShot()` I have no idea to implement, you need to do that by yourself.
  
  - I have no time to complete the Javadoc and some tests, but with the [Dribbble API(v1)](http://developer.dribbble.com/v1/ "Dribbble API(v1)") you can get the clear struct of the source code.
  
- So welcome pull request :)
+So welcome pull request :)
 
 ## How to use the source code?
 
