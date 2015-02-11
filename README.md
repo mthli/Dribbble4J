@@ -25,7 +25,7 @@ And then, for example, check if you like a shot:
     
     ...
 
-[Download latest jar]( "Latest jar").
+[Download latest jar](https://github.com/mthli/Dribbble4J/releases/download/v1.0.0/Dribbble4J.1.0.0.jar "Latest jar").
 
 ### Attentions:
 
