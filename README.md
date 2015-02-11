@@ -29,7 +29,7 @@ And then, for example, check if you like a shot:
 
 ### Attentions:
 
- - I'm **not a Player** of Dribbble so that some methods such as `ShotService.createShot()` I have no idea to implement, you need to do that by yourself.
+ - I'm not a player of Dribbble so that some methods such as `ShotService.createShot()` I have no idea to implement, you need to do that by yourself.
  
  - I have no time to complete the Javadoc and some tests, but with the [Dribbble API(v1)](http://developer.dribbble.com/v1/ "Dribbble API(v1)") you can get the clear struct of the source code.
  
