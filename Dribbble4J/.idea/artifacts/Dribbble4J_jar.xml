@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Dribbble4J:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Dribbble4J_jar</output-path>
+    <root id="archive" name="Dribbble4J.jar">
+      <element id="module-output" name="Dribbble4J" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/gson-2.3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/okhttp-2.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/okio-1.2.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

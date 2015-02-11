@@ -162,27 +162,28 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/gson-2.3.1.jar!/" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration default="false" name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Activation">
+    <configuration default="false" name="Activation" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Test.Test" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -346,11 +347,11 @@
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.Test" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Activation" />
     </list>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Activation" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -407,6 +408,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32380953" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25528702" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -419,7 +421,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32380953" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.32857144" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="235" y="123" width="1086" height="542" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -462,7 +463,7 @@
             <element signature="method#getShots#1;class#ShotService#0" expanded="false" />
             <element signature="method#getShots#2;class#ShotService#0" expanded="false" />
             <element signature="method#getShots#3;class#ShotService#0" expanded="false" />
-            <element signature="e#3104#3112#0" expanded="true" />
+            <element signature="e#3104#3112#0" expanded="false" />
             <element signature="method#getShotAttachment#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShotAttachments#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShotAttachments#1;class#ShotService#0" expanded="false" />
@@ -504,7 +505,7 @@
             <element signature="method#getShots#1;class#ShotService#0" expanded="false" />
             <element signature="method#getShots#2;class#ShotService#0" expanded="false" />
             <element signature="method#getShots#3;class#ShotService#0" expanded="false" />
-            <element signature="e#3104#3112#0" expanded="true" />
+            <element signature="e#3104#3112#0" expanded="false" />
             <element signature="method#getShotAttachment#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShotAttachments#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShotAttachments#1;class#ShotService#0" expanded="false" />
@@ -554,7 +555,7 @@
             <element signature="method#getShots#1;class#ShotService#0" expanded="false" />
             <element signature="method#getShots#2;class#ShotService#0" expanded="false" />
             <element signature="method#getShots#3;class#ShotService#0" expanded="false" />
-            <element signature="e#3104#3112#0" expanded="true" />
+            <element signature="e#3104#3112#0" expanded="false" />
             <element signature="method#getShotAttachment#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShotAttachments#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShotAttachments#1;class#ShotService#0" expanded="false" />
@@ -889,8 +890,8 @@
         <state vertical-scroll-proportion="0.24875621" vertical-offset="0" max-vertical-offset="603">
           <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding>
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="false" />
+            <element signature="e#396#397#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -906,7 +907,7 @@
             <element signature="method#getShots#1;class#ShotService#0" expanded="false" />
             <element signature="method#getShots#2;class#ShotService#0" expanded="false" />
             <element signature="method#getShots#3;class#ShotService#0" expanded="false" />
-            <element signature="e#3104#3112#0" expanded="true" />
+            <element signature="e#3104#3112#0" expanded="false" />
             <element signature="method#getShotAttachment#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShotAttachments#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShotAttachments#1;class#ShotService#0" expanded="false" />
@@ -1073,10 +1074,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>Dribbble4J:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
