@@ -6,6 +6,11 @@ import com.squareup.okhttp.Response;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Actions of users.
+ *
+ * @see <a href="http://developer.dribbble.com/v1/users/">Dribbble API #users</a>
+ */
 public class UserService {
     private static final String TAG = "USER_SERVICE";
     

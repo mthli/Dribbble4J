@@ -8,6 +8,9 @@ import com.squareup.okhttp.Response;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * The unit for GET actions.
+ */
 public class Unit {
     private Http http;
 

@@ -5,6 +5,12 @@ import Dribbble.Shot;
 
 import java.util.List;
 
+/**
+ * Actions of projects.
+ *
+ * @see <a href="http://help.dribbble.com/customer/portal/articles/1039423-what-is-a-project-">Dribbble Help #what is a project?</a>
+ * @see <a href="http://developer.dribbble.com/v1/projects/">Dribbble API #projects</a>
+ */
 public class ProjectService {
     private static final String TAG = "PROJECT_SERVICE";
 

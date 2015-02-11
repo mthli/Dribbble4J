@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.net.Proxy;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * The unit of HTTP VERBS.
+ */
 public class Http {
     private String accessToken;
 

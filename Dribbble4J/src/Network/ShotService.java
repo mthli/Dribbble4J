@@ -8,6 +8,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Actions of shots.
+ *
+ * @see <a href="http://help.dribbble.com/customer/portal/articles/1039415-what-are-shots-">Dribbble Help #what are shots?</a>
+ * @see <a href="http://developer.dribbble.com/v1/shots/">Dribbble API #shots</a>
+ */
 public class ShotService {
     private static final String TAG = "SHOT_SERVICE";
 
@@ -334,6 +340,12 @@ public class ShotService {
         return unit.getRebounds(url, TAG);
     }
 
+    /**
+     * For I am not a player of Dribbble,
+     * I have no idea or how to implement those methods,
+     * so you need have to do this by yourself,
+     * also welcome some pull request :)
+     */
     public interface Player {
         public void createShot(String title, File image) throws ResponseException;
 

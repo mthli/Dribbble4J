@@ -7,6 +7,12 @@ import com.squareup.okhttp.Response;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Actions of buckets.
+ *
+ * @see <a href="http://help.dribbble.com/customer/portal/articles/1039424-what-is-a-bucket-">Dribbble Help #what is a bucket?</a>
+ * @see <a href="http://developer.dribbble.com/v1/buckets/">Dribbbe API #buckets</a>
+ */
 public class BucketService {
     private static final String TAG = "BUCKET_SERVICE";
 

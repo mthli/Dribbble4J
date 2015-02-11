@@ -5,6 +5,12 @@ import Dribbble.User;
 
 import java.util.List;
 
+/**
+ * Actions of teams.
+ *
+ * @see <a href="http://developer.dribbble.com/v1/teams/members/">Dribbble API #teams/members</a>
+ * @see <a href="http://developer.dribbble.com/v1/teams/shots/">Dribbble API #teams/shots</a>
+ */
 public class TeamService {
     private static final String TAG = "TEAM_SERVICE";
 
