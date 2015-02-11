@@ -2,6 +2,13 @@ package Dribbble;
 
 import Network.*;
 
+/**
+ * The main class or this api library, all methods begin with it.
+ * You need to get your AccessToken with suitable permission(scope) for using this api library.
+ *
+ * @see <a href="http://developer.dribbble.com/v1/">Dribbble API #overview</a>
+ * @see <a href="http://developer.dribbble.com/v1/oauth/">Dribbble API #overview/oauth</a>
+ */
 public class Dribbble {
     private String accessToken;
     public String getAccessToken() {
