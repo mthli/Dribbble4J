@@ -33,6 +33,10 @@ public class ShotService {
 
     private static final String SHOT_LIKES = Parameter.SCHEMA + "/shots/" + Parameter.ID + "/likes";
 
+    private static final String SHOT_PROJECTS = Parameter.SCHEMA + "/shots/" + Parameter.ID + "/projects";
+
+    private static final String SHOT_REBOUNDS = Parameter.SCHEMA + "/shots/" + Parameter.ID + "/rebounds";
+
     private Http http;
 
     private Unit unit;
@@ -302,6 +306,32 @@ public class ShotService {
                 + "&"
                 + Parameter.PER_PAGE + perPage;
         return unit.getLikes(url, TAG);
+    }
+
+    public List<Project> getShotProjects(int id) throws ResponseException {
+        return getShotProjects(id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+    }
+
+    public List<Project> getShotProjects(int id, int page, int perPage) throws ResponseException {
+        String url = SHOT_PROJECTS.replace(Parameter.ID, String.valueOf(id))
+                + "?"
+                + Parameter.PAGE + page
+                + "&"
+                + Parameter.PER_PAGE + perPage;
+        return unit.getProjects(url, TAG);
+    }
+
+    public List<Rebound> getShotRebounds(int id) throws ResponseException {
+        return getShotRebounds(id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+    }
+
+    public List<Rebound> getShotRebounds(int id, int page, int perPage) throws ResponseException {
+        String url = SHOT_REBOUNDS.replace(Parameter.ID, String.valueOf(id))
+                + "?"
+                + Parameter.PAGE + page
+                + "&"
+                + Parameter.PER_PAGE + perPage;
+        return unit.getRebounds(url, TAG);
     }
 
     public interface Player {
