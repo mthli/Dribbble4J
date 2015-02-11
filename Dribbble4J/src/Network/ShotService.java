@@ -345,6 +345,9 @@ public class ShotService {
      * I have no idea or how to implement those methods,
      * so you need have to do this by yourself,
      * also welcome some pull request :)
+     *
+     * @see <a href="http://developer.dribbble.com/v1/shots/">Dribbble API #shots</a>
+     * @see Network.Parameter
      */
     public interface Player {
         public void createShot(String title, File image) throws ResponseException;

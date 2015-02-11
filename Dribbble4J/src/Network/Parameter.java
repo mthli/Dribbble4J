@@ -1,5 +1,8 @@
 package Network;
 
+/**
+ * Some Parameters maybe used in your source code.
+ */
 public class Parameter {
     public static final String SCHEMA = "https://api.dribbble.com/v1";
 
