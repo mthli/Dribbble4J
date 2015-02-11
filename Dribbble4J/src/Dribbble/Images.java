@@ -1,5 +1,11 @@
 package Dribbble;
 
+/**
+ * The class of some images link.
+ *
+ * @see <a href="http://developer.dribbble.com/v1/shots/">Dribbble API #shots</a>
+ * @see <a href="http://developer.dribbble.com/v1/shots/rebounds/">Dribbble API #shots/rebounds</a>
+ */
 public class Images {
     public static final String HIDPI = "hidpi";
 

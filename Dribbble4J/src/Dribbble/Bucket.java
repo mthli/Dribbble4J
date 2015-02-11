@@ -1,5 +1,11 @@
 package Dribbble;
 
+/**
+ * A Bucket is a collection of shots that any Dribbble member can create.
+ *
+ * @see <a href="http://help.dribbble.com/customer/portal/articles/1039424-what-is-a-bucket-">Dribbble Help #what is a bucket?</a>
+ * @see <a href="http://developer.dribbble.com/v1/buckets/">Dribbble API #buckets</a>
+ */
 public class Bucket {
     public static final String ID = "id";
 

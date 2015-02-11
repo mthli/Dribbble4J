@@ -1,5 +1,10 @@
 package Dribbble;
 
+/**
+ * The class of a team.
+ *
+ * @see <a href="http://developer.dribbble.com/v1/users/teams/">Dribbble API #users/teams</a>
+ */
 public class Team {
     public static final String ID = "id";
 

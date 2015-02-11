@@ -1,5 +1,10 @@
 package Dribbble;
 
+/**
+ * The class of a shot's attachment.
+ *
+ * @see <a href="http://developer.dribbble.com/v1/shots/attachments/">Dribbble API #shots/attachments</a>
+ */
 public class Attachment {
     public static final String ID = "id";
 

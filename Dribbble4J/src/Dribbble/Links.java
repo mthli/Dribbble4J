@@ -1,5 +1,11 @@
 package Dribbble;
 
+/**
+ * The class of some links.
+ *
+ * @see <a href="http://developer.dribbble.com/v1/users/">Dribbble API #users</a>
+ * @see <a href="http://developer.dribbble.com/v1/users/teams/">Dribbble API #users/teams</a>
+ */
 public class Links {
     public static final String WEB = "web";
 

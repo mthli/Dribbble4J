@@ -1,5 +1,10 @@
 package Dribbble;
 
+/**
+ * The class of a user.
+ *
+ * @see <a href="http://developer.dribbble.com/v1/users/">Dribbble API #users</a>
+ */
 public class User {
     public static final String ID = "id";
 

@@ -1,5 +1,11 @@
 package Dribbble;
 
+/**
+ * A Project is a collection of a player's shots that have been grouped because they share a common theme.
+ *
+ * @see <a href="http://help.dribbble.com/customer/portal/articles/1039423-what-is-a-project-">Dribbble Help #what is a project?</a>
+ * @see <a href="http://developer.dribbble.com/v1/projects/">Dribbble API #projects</a>
+ */
 public class Project {
     public static final String ID = "id";
 

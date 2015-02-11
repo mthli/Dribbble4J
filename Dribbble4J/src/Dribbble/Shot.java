@@ -1,5 +1,11 @@
 package Dribbble;
 
+/**
+ * Shots are small screenshots (400×300* pixels max) posted by members to show what they are working on.
+ *
+ * @see <a href="http://help.dribbble.com/customer/portal/articles/1039415-what-are-shots-">Dribbble Help #what are shots?</a>
+ * @see <a href="http://developer.dribbble.com/v1/shots/">Dribbble API #shots</a>
+ */
 public class Shot {
     public static final String ID = "id";
 

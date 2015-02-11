@@ -1,5 +1,10 @@
 package Dribbble;
 
+/**
+ * The class of a shot's comment.
+ *
+ * @see <a href="http://developer.dribbble.com/v1/shots/comments/">Dribbble API #shots/comments</a>
+ */
 public class Comment {
     public static final String ID = "id";
 

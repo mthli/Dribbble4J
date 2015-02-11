@@ -1,5 +1,10 @@
 package Dribbble;
 
+/**
+ * The class of a shot's like.
+ *
+ * @see <a href="http://developer.dribbble.com/v1/shots/likes/">Dribbble API #shots/likes</a>
+ */
 public class Like {
     public static final String ID = "id";
 

@@ -1,5 +1,11 @@
 package Dribbble;
 
+/**
+ * A rebound is a shot in reply to another shot. Rebounds offer a way to follow up and “link” two shots together.
+ *
+ * @see <a href="http://help.dribbble.com/customer/portal/articles/1039422-what-is-a-rebound-">Dribbble Help #what is a rebound?</a>
+ * @see <a href="http://developer.dribbble.com/v1/shots/rebounds/">Dribbble API #shots/rebounds</a>
+ */
 public class Rebound {
     public static final String ID = "id";
 
