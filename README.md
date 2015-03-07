@@ -3,6 +3,8 @@ Dribbble4J
 
 [Dribbble API(v1)](http://developer.dribbble.com/v1/ "Dribbble API(v1)") for Java.
 
+__UNDER DEVELOPMENT!!!__
+
 ## How to use the library?
 
 You need to get a **AccessToken** with [suitable permission(scope)](http://developer.dribbble.com/v1/oauth/ "Dribbble API #oauth").
@@ -10,11 +12,11 @@ You need to get a **AccessToken** with [suitable permission(scope)](http://devel
 And then, for example, check if you like a shot:
 
     ...
-    
+
     Dribbble dribbble = new Dribbble(ACCESS_TOKEN);
-    
+
     ShotService service = dribbble.getShotService();
-    
+
     try {
         System.out.printlin(
             service.isShotLike(SHOT_ID);
@@ -22,17 +24,17 @@ And then, for example, check if you like a shot:
     } catch(ResponseExpception r) {
         /* Do something here */
     }
-    
+
     ...
 
 [Download latest jar](https://github.com/mthli/Dribbble4J/releases/download/v1.0.0/Dribbble4J.1.0.0.jar "Latest jar").
 
 ### Attentions:
 
- - I'm not a player of Dribbble so that some methods such as `ShotService.createShot()` I have no idea to implement, you need to do that by yourself.
- 
+ - ~~I'm not a player of Dribbble so that some methods such as `ShotService.createShot()` I have no idea to implement, you need to do that by yourself.~~
+
  - I have no time to complete the Javadoc and some tests, but with the [Dribbble API(v1)](http://developer.dribbble.com/v1/ "Dribbble API(v1)") you can get the clear struct of the source code.
- 
+
 So welcome pull request :)
 
 ## How to use the source code?
