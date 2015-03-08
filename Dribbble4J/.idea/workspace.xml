@@ -28,8 +28,8 @@
       <file leaf-file-name="ShotService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Network/ShotService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7941681" vertical-offset="4712" max-vertical-offset="5295">
-              <caret line="411" column="121" selection-start-line="411" selection-start-column="121" selection-end-line="411" selection-end-column="121" />
+            <state vertical-scroll-proportion="0.77684563" vertical-offset="4847" max-vertical-offset="5490">
+              <caret line="455" column="13" selection-start-line="455" selection-start-column="13" selection-end-line="455" selection-end-column="13" />
               <folding>
                 <element signature="method#ShotService#0;class#ShotService#0" expanded="false" />
                 <element signature="method#getShot#0;class#ShotService#0" expanded="false" />
@@ -44,11 +44,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Network/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="4756" max-vertical-offset="6015">
+              <caret line="325" column="16" selection-start-line="325" selection-start-column="16" selection-end-line="325" selection-end-column="16" />
+              <folding>
+                <element signature="method#UserService#0;class#UserService#0" expanded="false" />
+                <element signature="method#getUser#0;class#UserService#0" expanded="false" />
+                <element signature="method#getUser#1;class#UserService#0" expanded="false" />
+                <element signature="method#getUserBuckets#0;class#UserService#0" expanded="false" />
+                <element signature="method#getUserBuckets#1;class#UserService#0" expanded="false" />
+                <element signature="method#getUserBuckets#2;class#UserService#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-              <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+              <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -108,8 +125,8 @@
         <option value="$PROJECT_DIR$/src/Network/UserService.java" />
         <option value="$PROJECT_DIR$/src/Network/BucketService.java" />
         <option value="$PROJECT_DIR$/src/Network/Parameter.java" />
-        <option value="$PROJECT_DIR$/src/Network/ShotService.java" />
         <option value="$PROJECT_DIR$/src/Test/Test.java" />
+        <option value="$PROJECT_DIR$/src/Network/ShotService.java" />
       </list>
     </option>
   </component>
@@ -505,7 +522,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2030303" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="898" y="45" width="362" height="603" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2030303" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="898" y="45" width="362" height="603" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.43820226" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="185" y="203" width="1035" height="472" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -891,21 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3286" max-vertical-offset="6015">
-          <caret line="248" column="16" selection-start-line="248" selection-start-column="16" selection-end-line="248" selection-end-column="16" />
-          <folding>
-            <element signature="method#UserService#0;class#UserService#0" expanded="false" />
-            <element signature="method#getUser#0;class#UserService#0" expanded="false" />
-            <element signature="method#getUser#1;class#UserService#0" expanded="false" />
-            <element signature="method#getUserBuckets#0;class#UserService#0" expanded="false" />
-            <element signature="method#getUserBuckets#1;class#UserService#0" expanded="false" />
-            <element signature="method#getUserBuckets#2;class#UserService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Network/ProjectService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="109" max-vertical-offset="705">
@@ -943,16 +945,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Network/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4756" max-vertical-offset="6015">
+          <caret line="325" column="16" selection-start-line="325" selection-start-column="16" selection-end-line="325" selection-end-column="16" />
+          <folding>
+            <element signature="method#UserService#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUser#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUser#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserBuckets#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserBuckets#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserBuckets#2;class#UserService#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Network/ShotService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7941681" vertical-offset="4712" max-vertical-offset="5295">
-          <caret line="411" column="121" selection-start-line="411" selection-start-column="121" selection-end-line="411" selection-end-column="121" />
+        <state vertical-scroll-proportion="0.77684563" vertical-offset="4847" max-vertical-offset="5490">
+          <caret line="455" column="13" selection-start-line="455" selection-start-column="13" selection-end-line="455" selection-end-column="13" />
           <folding>
             <element signature="method#ShotService#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShot#0;class#ShotService#0" expanded="false" />

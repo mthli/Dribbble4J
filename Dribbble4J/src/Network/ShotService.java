@@ -445,4 +445,17 @@ public class ShotService {
             throw new ResponseException(i.getMessage(), i);
         }
     }
+
+    public void deleteShot(int id) throws ResponseException {
+        String url = SHOT.replace(Parameter.HOLDER_ID, String.valueOf(id));
+
+        try {
+            Response response = http.delete(url, TAG);
+            if (response.code() != Parameter.STATUS_204) {
+                throw new ResponseException(response.toString());
+            }
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
 }
