@@ -45,7 +45,7 @@ Just import the `Dribbble4J` folder with your __IntelliJ IDEA__.
 
  - [Okio](https://github.com/square/okio "Okio")
 
-And thanks [Dribbble](https://github.com/dribbble "Dribbble") for a player account so that I have the permission to complete some `upload` method :)
+And thanks [Dribbble](https://github.com/dribbble "Dribbble") for a player account so that I have the permission to complete `upload` methods :)
 
 ## License:
 
