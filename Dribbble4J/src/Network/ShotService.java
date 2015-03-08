@@ -341,14 +341,6 @@ public class ShotService {
     }
 
 //    public interface Player {
-//        public void createShot(String title, File image) throws ResponseException;
-//
-//        public void createShot(String title, File image, String description, String[] tags, int teamId, int reboundSourceId) throws ResponseException;
-//
-//        public void updateShot(int id) throws ResponseException;
-//
-//        public void updateShot(int id, String title, String description, int teamId, String[] tags) throws ResponseException;
-//
 //        public void deleteShot(int id) throws ResponseException;
 //
 //        public void createShotAttachment(int shot, File file) throws ResponseException;
@@ -413,11 +405,44 @@ public class ShotService {
         }
     }
 
-    public void updateShot(int id) throws ResponseException {
-        updateShot(id, null, null, 0, null);
+    public Shot updateShot(int id) throws ResponseException {
+        return updateShot(id, null, null, 0, null);
     }
 
-    public void updateShot(int id, String title, String description, int teamId, String[] tags) throws ResponseException {
+    public Shot updateShot(int id, String title, String description, int teamId, String[] tags) throws ResponseException {
+        String url = SHOT.replace(Parameter.HOLDER_ID, String.valueOf(id));
 
+        MultipartBuilder builder = new MultipartBuilder();
+        builder.type(MultipartBuilder.FORM);
+
+        builder.addFormDataPart(Parameter.TITLE, title);
+
+        if (description != null) {
+            builder.addFormDataPart(Parameter.DESCRIPTION, description);
+        }
+
+        if (teamId > 0) {
+            builder.addFormDataPart(Parameter.TEAM_ID, String.valueOf(teamId));
+        }
+
+        if (tags != null) {
+            String temp = "";
+            for (String tag : tags) {
+                temp += "\"" + tag + "\",";
+            }
+            temp = temp.substring(0, temp.length() - 1);
+            builder.addFormDataPart(Parameter.TAGS, temp);
+        }
+
+        try {
+            Response response = http.put(builder.build(), url, TAG);
+            if (response.code() != Parameter.STATUS_200) {
+                throw new ResponseException(response.toString());
+            }
+
+            return unit.getShot(response);
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
     }
 }
