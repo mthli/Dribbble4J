@@ -14,23 +14,23 @@ import java.util.List;
 public class UserService {
     private static final String TAG = "USER_SERVICE";
     
-    private static final String USER = Parameter.SCHEMA + "/users/" + Parameter.USER;
+    private static final String USER = Parameter.SCHEMA + "/users/" + Parameter.HOLDER_USER;
 
-    private static final String USER_BUCKETS = Parameter.SCHEMA + "/users/" + Parameter.USER + "/buckets";
+    private static final String USER_BUCKETS = Parameter.SCHEMA + "/users/" + Parameter.HOLDER_USER + "/buckets";
 
-    private static final String USER_FOLLOWERS = Parameter.SCHEMA + "/users/" + Parameter.USER + "/followers";
+    private static final String USER_FOLLOWERS = Parameter.SCHEMA + "/users/" + Parameter.HOLDER_USER + "/followers";
 
-    private static final String USER_FOLLOWING = Parameter.SCHEMA + "/users/" + Parameter.USER + "/following";
+    private static final String USER_FOLLOWING = Parameter.SCHEMA + "/users/" + Parameter.HOLDER_USER + "/following";
 
-    private static final String RELATIONSHIP = Parameter.SCHEMA + "/users/" + Parameter.USER + "/following/" + Parameter.TARGET_USER;
+    private static final String RELATIONSHIP = Parameter.SCHEMA + "/users/" + Parameter.HOLDER_USER + "/following/" + Parameter.HOLDER_TARGET_USER;
 
-    private static final String USER_LIKES = Parameter.SCHEMA + "/users/" + Parameter.USER + "/likes";
+    private static final String USER_LIKES = Parameter.SCHEMA + "/users/" + Parameter.HOLDER_USER + "/likes";
 
-    private static final String USER_PROJECTS = Parameter.SCHEMA + "/users/" + Parameter.USER + "/projects";
+    private static final String USER_PROJECTS = Parameter.SCHEMA + "/users/" + Parameter.HOLDER_USER + "/projects";
 
-    private static final String USER_SHOTS = Parameter.SCHEMA + "/users/" + Parameter.USER + "/shots";
+    private static final String USER_SHOTS = Parameter.SCHEMA + "/users/" + Parameter.HOLDER_USER + "/shots";
 
-    private static final String USER_TEAMS = Parameter.SCHEMA + "/users/" + Parameter.USER + "/teams";
+    private static final String USER_TEAMS = Parameter.SCHEMA + "/users/" + Parameter.HOLDER_USER + "/teams";
 
     private static final String AUTHENTICATED_USER = Parameter.SCHEMA + "/user";
 
@@ -42,11 +42,11 @@ public class UserService {
 
     private static final String AUTHENTICATED_USER_FOLLOWING_SHOTS = Parameter.SCHEMA + "/user/following/shots";
 
-    private static final String IS_FOLLOWING = Parameter.SCHEMA + "/user/following/" + Parameter.USER;
+    private static final String IS_FOLLOWING = Parameter.SCHEMA + "/user/following/" + Parameter.HOLDER_USER;
 
-    private static final String FOLLOW = Parameter.SCHEMA + "/users/" + Parameter.USER + "/follow";
+    private static final String FOLLOW = Parameter.SCHEMA + "/users/" + Parameter.HOLDER_USER + "/follow";
 
-    private static final String UNFOLLOW = Parameter.SCHEMA + "/users/" + Parameter.USER + "/follow";
+    private static final String UNFOLLOW = Parameter.SCHEMA + "/users/" + Parameter.HOLDER_USER + "/follow";
 
     private static final String AUTHENTICATED_USER_LIKES = Parameter.SCHEMA + "/user/likes";
 
@@ -74,12 +74,12 @@ public class UserService {
     }
 
     public User getUser(String username) throws ResponseException {
-        String url = USER.replace(Parameter.USER, username);
+        String url = USER.replace(Parameter.HOLDER_USER, username);
         return unit.getUser(url, TAG);
     }
 
     public List<Bucket> getUserBuckets(int id) throws ResponseException {
-        return getUserBuckets(id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getUserBuckets(id, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Bucket> getUserBuckets(int id, int page, int perPage) throws ResponseException {
@@ -87,20 +87,20 @@ public class UserService {
     }
 
     public List<Bucket> getUserBuckets(String username) throws ResponseException {
-        return getUserBuckets(username, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getUserBuckets(username, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Bucket> getUserBuckets(String username, int page, int perPage) throws ResponseException {
-        String url = USER_BUCKETS.replace(Parameter.USER, username)
+        String url = USER_BUCKETS.replace(Parameter.HOLDER_USER, username)
                 + "?"
-                + Parameter.PAGE + page
+                + Parameter.PAGE + "=" + page
                 + "&"
-                + Parameter.PER_PAGE + perPage;
+                + Parameter.PER_PAGE + "=" + perPage;
         return unit.getBuckets(url, TAG);
     }
 
     public List<User> getUserFollowers(int id) throws ResponseException {
-        return getUserFollowers(id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getUserFollowers(id, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<User> getUserFollowers(int id, int page, int perPage) throws ResponseException {
@@ -108,20 +108,20 @@ public class UserService {
     }
 
     public List<User> getUserFollowers(String username) throws ResponseException {
-        return getUserFollowers(username, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getUserFollowers(username, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<User> getUserFollowers(String username, int page, int perPage) throws ResponseException {
-        String url = USER_FOLLOWERS.replace(Parameter.USER, username)
+        String url = USER_FOLLOWERS.replace(Parameter.HOLDER_USER, username)
                 + "?"
-                + Parameter.PAGE + page
+                + Parameter.PAGE + "=" + page
                 + "&"
-                + Parameter.PER_PAGE + perPage;
+                + Parameter.PER_PAGE + "=" + perPage;
         return unit.getUsers(url, TAG);
     }
 
     public List<User> getUserFollowing(int id) throws ResponseException {
-        return getUserFollowing(id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getUserFollowing(id, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<User> getUserFollowing(int id, int page, int perPage) throws ResponseException {
@@ -129,15 +129,15 @@ public class UserService {
     }
 
     public List<User> getUserFollowing(String username) throws ResponseException {
-        return getUserFollowing(username, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getUserFollowing(username, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<User> getUserFollowing(String username, int page, int perPage) throws ResponseException {
-        String url = USER_FOLLOWING.replace(Parameter.USER, username)
+        String url = USER_FOLLOWING.replace(Parameter.HOLDER_USER, username)
                 + "?"
-                + Parameter.PAGE + page
+                + Parameter.PAGE + "=" + page
                 + "&"
-                + Parameter.PER_PAGE + perPage;
+                + Parameter.PER_PAGE + "=" + perPage;
         return unit.getUsers(url, TAG);
     }
 
@@ -146,7 +146,7 @@ public class UserService {
     }
 
     public boolean getRelationShip(String username, String targetUsername) throws ResponseException {
-        String url = RELATIONSHIP.replace(Parameter.USER, username).replace(Parameter.TARGET_USER, targetUsername);
+        String url = RELATIONSHIP.replace(Parameter.HOLDER_USER, username).replace(Parameter.HOLDER_TARGET_USER, targetUsername);
 
         try {
             Response response = http.get(url, TAG);
@@ -163,7 +163,7 @@ public class UserService {
     }
 
     public List<Shot> getUserLikes(int id) throws ResponseException {
-        return getUserLikes(id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getUserLikes(id, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Shot> getUserLikes(int id, int page, int perPage) throws ResponseException {
@@ -171,20 +171,20 @@ public class UserService {
     }
 
     public List<Shot> getUserLikes(String username) throws ResponseException {
-        return getUserLikes(username, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getUserLikes(username, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Shot> getUserLikes(String username, int page, int perPage) throws ResponseException {
-        String url = USER_LIKES.replace(Parameter.USER, username)
+        String url = USER_LIKES.replace(Parameter.HOLDER_USER, username)
                 + "?"
-                + Parameter.PAGE + page
+                + Parameter.PAGE + "=" + page
                 + "&"
-                + Parameter.PER_PAGE + perPage;
+                + Parameter.PER_PAGE + "=" + perPage;
         return unit.getShots(url, TAG);
     }
 
     public List<Project> getUserProjects(int id) throws ResponseException {
-        return getUserProjects(id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getUserProjects(id, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Project> getUserProjects(int id, int page, int perPage) throws ResponseException {
@@ -192,20 +192,20 @@ public class UserService {
     }
 
     public List<Project> getUserProjects(String username) throws ResponseException {
-        return getUserProjects(username, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getUserProjects(username, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Project> getUserProjects(String username, int page, int perPage) throws ResponseException {
-        String url = USER_PROJECTS.replace(Parameter.USER, username)
+        String url = USER_PROJECTS.replace(Parameter.HOLDER_USER, username)
                 + "?"
-                + Parameter.PAGE + page
+                + Parameter.PAGE + "=" + page
                 + "&"
-                + Parameter.PER_PAGE + perPage;
+                + Parameter.PER_PAGE + "=" + perPage;
         return unit.getProjects(url, TAG);
     }
 
     public List<Shot> getUserShots(int id) throws ResponseException {
-        return getUserShots(id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getUserShots(id, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Shot> getUserShots(int id, int page, int perPage) throws ResponseException {
@@ -213,20 +213,20 @@ public class UserService {
     }
 
     public List<Shot> getUserShots(String username) throws ResponseException {
-        return getUserShots(username, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getUserShots(username, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Shot> getUserShots(String username, int page, int perPage) throws ResponseException {
-        String url = USER_SHOTS.replace(Parameter.USER, username)
+        String url = USER_SHOTS.replace(Parameter.HOLDER_USER, username)
                 + "?"
-                + Parameter.PAGE + page
+                + Parameter.PAGE + "=" + page
                 + "&"
-                + Parameter.PER_PAGE + perPage;
+                + Parameter.PER_PAGE + "=" + perPage;
         return unit.getShots(url, TAG);
     }
 
     public List<Team> getUserTeams(int id) throws ResponseException {
-        return getUserTeams(id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getUserTeams(id, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Team> getUserTeams(int id, int page, int perPage) throws ResponseException {
@@ -234,15 +234,15 @@ public class UserService {
     }
 
     public List<Team> getUserTeams(String username) throws ResponseException {
-        return getUserTeams(username, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getUserTeams(username, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Team> getUserTeams(String username, int page, int perPage) throws ResponseException {
-        String url = USER_TEAMS.replace(Parameter.USER, username)
+        String url = USER_TEAMS.replace(Parameter.HOLDER_USER, username)
                 + "?"
-                + Parameter.PAGE + page
+                + Parameter.PAGE + "=" + page
                 + "&"
-                + Parameter.PER_PAGE + perPage;
+                + Parameter.PER_PAGE + "=" + perPage;
         return unit.getTeams(url, TAG);
     }
 
@@ -251,54 +251,54 @@ public class UserService {
     }
 
     public List<Bucket> getAuthenticatedUserBuckets() throws ResponseException {
-        return getAuthenticatedUserBuckets(Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getAuthenticatedUserBuckets(Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Bucket> getAuthenticatedUserBuckets(int page, int perPage) throws ResponseException {
         String url = AUTHENTICATED_USER_BUCKETS
                 + "?"
-                + Parameter.PAGE + page
+                + Parameter.PAGE + "=" + page
                 + "&"
-                + Parameter.PER_PAGE + perPage;
+                + Parameter.PER_PAGE + "=" + perPage;
         return unit.getBuckets(url, TAG);
     }
 
     public List<User> getAuthenticatedUserFollowers() throws ResponseException {
-        return getAuthenticatedUserFollowers(Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getAuthenticatedUserFollowers(Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<User> getAuthenticatedUserFollowers(int page, int perPage) throws ResponseException {
         String url = AUTHENTICATED_USER_FOLLOWERS
                 + "?"
-                + Parameter.PAGE + page
+                + Parameter.PAGE + "=" + page
                 + "&"
-                + Parameter.PER_PAGE + perPage;
+                + Parameter.PER_PAGE + "=" + perPage;
         return unit.getUsers(url, TAG);
     }
 
     public List<User> getAuthenticatedUserFollowing() throws ResponseException {
-        return getAuthenticatedUserFollowing(Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getAuthenticatedUserFollowing(Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<User> getAuthenticatedUserFollowing(int page, int perPage) throws ResponseException {
         String url = AUTHENTICATED_USER_FOLLOWING
                 + "?"
-                + Parameter.PAGE + page
+                + Parameter.PAGE + "=" + page
                 + "&"
-                + Parameter.PER_PAGE + perPage;
+                + Parameter.PER_PAGE + "=" + perPage;
         return unit.getUsers(url, TAG);
     }
 
     public List<Shot> getAuthenticatedUserFollowingShots() throws ResponseException {
-        return getAuthenticatedUserFollowingShots(Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getAuthenticatedUserFollowingShots(Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Shot> getAuthenticatedUserFollowingShots(int page, int perPage) throws ResponseException {
         String url = AUTHENTICATED_USER_FOLLOWING_SHOTS
                 + "?"
-                + Parameter.PAGE + page
+                + Parameter.PAGE + "=" + page
                 + "&"
-                + Parameter.PER_PAGE + perPage;
+                + Parameter.PER_PAGE + "=" + perPage;
         return unit.getShots(url, TAG);
     }
 
@@ -307,7 +307,7 @@ public class UserService {
     }
 
     public boolean isFollowing(String username) throws ResponseException {
-        String url = IS_FOLLOWING.replace(Parameter.USER, username);
+        String url = IS_FOLLOWING.replace(Parameter.HOLDER_USER, username);
 
         try {
             Response response = http.get(url, TAG);
@@ -328,7 +328,7 @@ public class UserService {
     }
 
     public void follow(String username) throws ResponseException {
-        String url = FOLLOW.replace(Parameter.USER, username);
+        String url = FOLLOW.replace(Parameter.HOLDER_USER, username);
 
         try {
             Response response = http.put(null, url, TAG);
@@ -345,7 +345,7 @@ public class UserService {
     }
 
     public void unfollow(String username) throws ResponseException {
-        String url = UNFOLLOW.replace(Parameter.USER, username);
+        String url = UNFOLLOW.replace(Parameter.HOLDER_USER, username);
 
         try {
             Response response = http.delete(url, TAG);
@@ -358,54 +358,54 @@ public class UserService {
     }
 
     public List<Shot> getAuthenticatedUserLikes() throws ResponseException {
-        return getAuthenticatedUserLikes(Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getAuthenticatedUserLikes(Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Shot> getAuthenticatedUserLikes(int page, int perPage) throws ResponseException {
         String url = AUTHENTICATED_USER_LIKES
                 + "?"
-                + Parameter.PAGE + page
+                + Parameter.PAGE + "=" + page
                 + "&"
-                + Parameter.PER_PAGE + perPage;
+                + Parameter.PER_PAGE + "=" + perPage;
         return unit.getShots(url, TAG);
     }
 
     public List<Project> getAuthenticatedUserProjects() throws ResponseException {
-        return getAuthenticatedUserProjects(Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getAuthenticatedUserProjects(Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Project> getAuthenticatedUserProjects(int page, int perPage) throws ResponseException {
         String url = AUTHENTICATED_USER_PROJECTS
                 + "?"
-                + Parameter.PAGE + page
+                + Parameter.PAGE + "=" + page
                 + "&"
-                + Parameter.PER_PAGE + perPage;
+                + Parameter.PER_PAGE + "=" + perPage;
         return unit.getProjects(url, TAG);
     }
 
     public List<Shot> getAuthenticatedUserShots() throws ResponseException {
-        return getAuthenticatedUserShots(Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getAuthenticatedUserShots(Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Shot> getAuthenticatedUserShots(int page, int perPage) throws ResponseException {
         String url = AUTHENTICATED_USER_SHOTS
                 + "?"
-                + Parameter.PAGE + page
+                + Parameter.PAGE + "=" + page
                 + "&"
-                + Parameter.PER_PAGE + perPage;
+                + Parameter.PER_PAGE + "=" + perPage;
         return unit.getShots(url, TAG);
     }
 
     public List<Team> getAuthenticatedUserTeams() throws ResponseException {
-        return getAuthenticatedUserTeams(Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getAuthenticatedUserTeams(Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Team> getAuthenticatedUserTeams(int page, int perPage) throws ResponseException {
         String url = AUTHENTICATED_USER_TEAMS
                 + "?"
-                + Parameter.PAGE + page
+                + Parameter.PAGE + "=" + page
                 + "&"
-                + Parameter.PER_PAGE + perPage;
+                + Parameter.PER_PAGE + "=" + perPage;
         return unit.getTeams(url, TAG);
     }
 }

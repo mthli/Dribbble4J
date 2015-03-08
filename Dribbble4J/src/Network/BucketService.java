@@ -16,11 +16,11 @@ import java.util.List;
 public class BucketService {
     private static final String TAG = "BUCKET_SERVICE";
 
-    private static final String BUCKET = Parameter.SCHEMA + "/buckets/" + Parameter.ID;
+    private static final String BUCKET = Parameter.SCHEMA + "/buckets/" + Parameter.HOLDER_ID;
 
     private static final String CREATE = Parameter.SCHEMA + "/buckets";
 
-    private static final String BUCKET_SHOTS = Parameter.SCHEMA + "/buckets/" + Parameter.ID + "/shots";
+    private static final String BUCKET_SHOTS = Parameter.SCHEMA + "/buckets/" + Parameter.HOLDER_ID + "/shots";
 
     private Http http;
 
@@ -36,16 +36,16 @@ public class BucketService {
     }
 
     public Bucket getBucket(int id) throws ResponseException {
-        String url = BUCKET.replace(Parameter.ID, String.valueOf(id));
+        String url = BUCKET.replace(Parameter.HOLDER_ID, String.valueOf(id));
         return unit.getBucket(url, TAG);
     }
 
     public Bucket createBucket(String name, String description) throws ResponseException {
-        String url = CREATE + "?" + Parameter.NAME + name;
+        String url = CREATE + "?" + Parameter.NAME + "=" + name;
         if (description != null && description.length() > 0) {
-            url = url + "&" + Parameter.DESCRIPTION + description;
+            url = url + "&" + Parameter.DESCRIPTION + "=" + description;
         }
-        url = url.replaceAll(" +", Parameter.SPACE);
+        url = url.replaceAll(" +", Parameter.WHITESPACE);
 
         try {
             Response response = http.post(null, url, TAG);
@@ -60,7 +60,7 @@ public class BucketService {
     }
 
     public Bucket updateBucket(int id) throws ResponseException {
-        String url = BUCKET.replace(Parameter.ID, String.valueOf(id));
+        String url = BUCKET.replace(Parameter.HOLDER_ID, String.valueOf(id));
 
         try {
             Response response = http.put(null, url, TAG);
@@ -75,7 +75,7 @@ public class BucketService {
     }
 
     public void deleteBucket(int id) throws ResponseException {
-        String url = BUCKET.replace(Parameter.ID, String.valueOf(id));
+        String url = BUCKET.replace(Parameter.HOLDER_ID, String.valueOf(id));
 
         try {
             Response response = http.delete(url, TAG);
@@ -88,22 +88,22 @@ public class BucketService {
     }
 
     public List<Shot> getBucketShots(int id) throws ResponseException {
-        return getBucketShots(id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getBucketShots(id, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Shot> getBucketShots(int id, int page, int perPage) throws ResponseException {
-        String url = BUCKET_SHOTS.replace(Parameter.ID, String.valueOf(id))
+        String url = BUCKET_SHOTS.replace(Parameter.HOLDER_ID, String.valueOf(id))
                 + "?"
-                + Parameter.PAGE + page
+                + Parameter.PAGE + "=" + page
                 + "&"
-                + Parameter.PER_PAGE + perPage;
+                + Parameter.PER_PAGE + "=" + perPage;
         return unit.getShots(url, TAG);
     }
 
     public void addBucketShot(int id, int shotId) throws ResponseException {
-        String url = BUCKET_SHOTS.replace(Parameter.ID, String.valueOf(id))
+        String url = BUCKET_SHOTS.replace(Parameter.HOLDER_ID, String.valueOf(id))
                 + "?"
-                + Parameter.SHOT_ID + shotId;
+                + Parameter.SHOT_ID + "=" + shotId;
 
         try {
             Response response = http.put(null, url, TAG);
@@ -116,9 +116,9 @@ public class BucketService {
     }
 
     public void removeBucketShot(int id, int shotId) throws ResponseException {
-        String url = BUCKET_SHOTS.replace(Parameter.ID, String.valueOf(id))
+        String url = BUCKET_SHOTS.replace(Parameter.HOLDER_ID, String.valueOf(id))
                 + "?"
-                + Parameter.SHOT_ID + shotId;
+                + Parameter.SHOT_ID + "=" + shotId;
 
         try {
             Response response = http.delete(url, TAG);

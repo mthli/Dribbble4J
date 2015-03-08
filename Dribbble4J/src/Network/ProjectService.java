@@ -14,9 +14,9 @@ import java.util.List;
 public class ProjectService {
     private static final String TAG = "PROJECT_SERVICE";
 
-    private static final String PROJECT = Parameter.SCHEMA + "/projects/" + Parameter.ID;
+    private static final String PROJECT = Parameter.SCHEMA + "/projects/" + Parameter.HOLDER_ID;
 
-    private static final String PROJECT_SHOTS = Parameter.SCHEMA + "/projects/" + Parameter.ID + "/shots";
+    private static final String PROJECT_SHOTS = Parameter.SCHEMA + "/projects/" + Parameter.HOLDER_ID + "/shots";
 
     private Http http;
 
@@ -32,20 +32,20 @@ public class ProjectService {
     }
 
     public Project getProject(int id) throws ResponseException {
-        String url = PROJECT.replace(Parameter.ID, String.valueOf(id));
+        String url = PROJECT.replace(Parameter.HOLDER_ID, String.valueOf(id));
         return unit.getProject(url, TAG);
     }
 
     public List<Shot> getProjectShots(int id) throws ResponseException {
-        return getProjectShots(id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getProjectShots(id, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Shot> getProjectShots(int id, int page, int perPage) throws ResponseException {
-        String url = PROJECT_SHOTS.replace(Parameter.ID, String.valueOf(id))
+        String url = PROJECT_SHOTS.replace(Parameter.HOLDER_ID, String.valueOf(id))
                 + "?"
-                + Parameter.PAGE + page
+                + Parameter.PAGE + "=" + page
                 + "&"
-                + Parameter.PER_PAGE + perPage;
+                + Parameter.PER_PAGE + "=" + perPage;
         return unit.getShots(url, TAG);
     }
 }

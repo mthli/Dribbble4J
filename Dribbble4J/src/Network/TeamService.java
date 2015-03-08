@@ -14,9 +14,9 @@ import java.util.List;
 public class TeamService {
     private static final String TAG = "TEAM_SERVICE";
 
-    private static final String TEAM_MEMBERS = Parameter.SCHEMA + "/teams/" + Parameter.TEAM + "/members";
+    private static final String TEAM_MEMBERS = Parameter.SCHEMA + "/teams/" + Parameter.HOLDER_TEAM + "/members";
 
-    private static final String TEAM_SHOTS = Parameter.SCHEMA + "/teams/" + Parameter.TEAM + "/shots";
+    private static final String TEAM_SHOTS = Parameter.SCHEMA + "/teams/" + Parameter.HOLDER_TEAM + "/shots";
 
     private Http http;
 
@@ -32,7 +32,7 @@ public class TeamService {
     }
 
     public List<User> getTeamMembers(int id) throws ResponseException {
-        return getTeamMembers(id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getTeamMembers(id, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<User> getTeamMembers(int id, int page, int perPage) throws ResponseException {
@@ -40,20 +40,20 @@ public class TeamService {
     }
 
     public List<User> getTeamMembers(String username) throws ResponseException {
-        return getTeamMembers(username, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getTeamMembers(username, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<User> getTeamMembers(String username, int page, int perPage) throws ResponseException {
-        String url = TEAM_MEMBERS.replace(Parameter.TEAM, username)
+        String url = TEAM_MEMBERS.replace(Parameter.HOLDER_TEAM, username)
                 + "?"
-                + Parameter.PAGE + page
+                + Parameter.PAGE + "=" + page
                 + "&"
-                + Parameter.PER_PAGE + perPage;
+                + Parameter.PER_PAGE + "=" + perPage;
         return unit.getUsers(url, TAG);
     }
 
     public List<Shot> getTeamShots(int id) throws ResponseException {
-        return getTeamShots(id, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getTeamShots(id, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Shot> getTeamShots(int id, int page, int perPage) throws ResponseException {
@@ -61,15 +61,15 @@ public class TeamService {
     }
 
     public List<Shot> getTeamShots(String username) throws ResponseException {
-        return getTeamShots(username, Parameter.DEFAULT_PAGE, Parameter.DEFAULT_PER_PAGE);
+        return getTeamShots(username, Parameter.PAGE_DEFAULT, Parameter.PER_PAGE_DEFAULT);
     }
 
     public List<Shot> getTeamShots(String username, int page, int perPage) throws ResponseException {
-        String url = TEAM_SHOTS.replace(Parameter.TEAM, username)
+        String url = TEAM_SHOTS.replace(Parameter.HOLDER_TEAM, username)
                 + "?"
-                + Parameter.PAGE + page
+                + Parameter.PAGE + "=" + page
                 + "&"
-                + Parameter.PER_PAGE + perPage;
+                + Parameter.PER_PAGE + "=" + perPage;
         return unit.getShots(url, TAG);
     }
 }

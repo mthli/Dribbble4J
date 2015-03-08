@@ -21,7 +21,7 @@ public class Http {
 
     public Response get(String url, Object tag) throws IOException {
         Request request = new Request.Builder()
-                .addHeader(Parameter.AUTHORIZATION, Parameter.BEARER + accessToken)
+                .addHeader(Parameter.OAUTH_AUTHORIZATION, Parameter.OAUTH_BEARER + accessToken)
                 .get()
                 .url(url)
                 .tag(tag)
@@ -32,7 +32,7 @@ public class Http {
 
     public Response post(RequestBody body, String url, Object tag) throws IOException {
         Request request = new Request.Builder()
-                .addHeader(Parameter.AUTHORIZATION, Parameter.BEARER + accessToken)
+                .addHeader(Parameter.OAUTH_AUTHORIZATION, Parameter.OAUTH_BEARER + accessToken)
                 .post(body)
                 .url(url)
                 .tag(tag)
@@ -43,7 +43,7 @@ public class Http {
 
     public Response put(RequestBody body, String url, Object tag) throws IOException {
         Request request = new Request.Builder()
-                .addHeader(Parameter.AUTHORIZATION, Parameter.BEARER + accessToken)
+                .addHeader(Parameter.OAUTH_AUTHORIZATION, Parameter.OAUTH_BEARER + accessToken)
                 .put(body)
                 .url(url)
                 .tag(tag)
@@ -54,7 +54,7 @@ public class Http {
 
     public Response patch(RequestBody body, String url, Object tag) throws IOException {
         Request request = new Request.Builder()
-                .addHeader(Parameter.AUTHORIZATION, Parameter.BEARER + accessToken)
+                .addHeader(Parameter.OAUTH_AUTHORIZATION, Parameter.OAUTH_BEARER + accessToken)
                 .patch(body)
                 .url(url)
                 .tag(tag)
@@ -65,7 +65,7 @@ public class Http {
 
     public Response delete(String url, Object tag) throws IOException {
         Request request = new Request.Builder()
-                .addHeader(Parameter.AUTHORIZATION, Parameter.BEARER + accessToken)
+                .addHeader(Parameter.OAUTH_AUTHORIZATION, Parameter.OAUTH_BEARER + accessToken)
                 .delete()
                 .url(url)
                 .tag(tag)
