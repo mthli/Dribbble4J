@@ -23,7 +23,7 @@ public class ShotService {
 
     private static final String SHOT_ATTACHMENT = Parameter.SCHEMA + "/shots/" + Parameter.HOLDER_SHOT + "/attachments/" + Parameter.HOLDER_ID;
 
-    private static final String SHOT_ATTACHMENTS = Parameter.SCHEMA + "/shots/" + Parameter.HOLDER_ID + "/attachments";
+    private static final String SHOT_ATTACHMENTS = Parameter.SCHEMA + "/shots/" + Parameter.HOLDER_SHOT + "/attachments";
 
     private static final String SHOT_BUCKETS = Parameter.SCHEMA + "/shots/" + Parameter.HOLDER_ID + "/buckets";
 
@@ -112,7 +112,7 @@ public class ShotService {
     }
 
     public List<Attachment> getShotAttachments(int id, int page, int perPage) throws ResponseException {
-        String url = SHOT_ATTACHMENTS.replace(Parameter.HOLDER_ID, String.valueOf(id))
+        String url = SHOT_ATTACHMENTS.replace(Parameter.HOLDER_SHOT, String.valueOf(id))
                 + "?"
                 + Parameter.PAGE + "=" + page
                 + "&"
@@ -340,14 +340,6 @@ public class ShotService {
         return unit.getRebounds(url, TAG);
     }
 
-//    public interface Player {
-//        public void deleteShot(int id) throws ResponseException;
-//
-//        public void createShotAttachment(int shot, File file) throws ResponseException;
-//
-//        public void deleteShotAttachment(int shot, int id) throws ResponseException;
-//    }
-
     public void createShot(String title, File image) throws ResponseException {
         createShot(title, image, null, null, 0, 0);
     }
@@ -356,46 +348,46 @@ public class ShotService {
         String url = SHOTS;
         String mediaType = Parameter.IMAGE_MEDIA_TYPE_PNG;
 
+        MultipartBuilder builder = new MultipartBuilder();
+        builder.type(MultipartBuilder.FORM);
+
+        builder.addFormDataPart(Parameter.TITLE, title);
+
+        if (image.getName().endsWith(Parameter.IMAGE_SUFFIX_GIF)) {
+            mediaType = Parameter.IMAGE_MEDIA_TYPE_GIF;
+        } else if (image.getName().endsWith(Parameter.IMAGE_SUFFIX_JPG)) {
+            mediaType = Parameter.IMAGE_MEDIA_TYPE_JPG;
+        } else if (image.getName().endsWith(Parameter.IMAGE_SUFFIX_PNG)) {
+            mediaType = Parameter.IMAGE_MEDIA_TYPE_PNG;
+        }
+        builder.addFormDataPart(
+                Parameter.IMAGE,
+                image.getName(),
+                RequestBody.create(MediaType.parse(mediaType), image)
+        );
+
+        if (description != null) {
+            builder.addFormDataPart(Parameter.DESCRIPTION, description);
+        }
+
+        if (tags != null) {
+            String temp = "";
+            for (String tag : tags) {
+                temp += "\"" + tag + "\",";
+            }
+            temp = temp.substring(0, temp.length() - 1);
+            builder.addFormDataPart(Parameter.TAGS, temp);
+        }
+
+        if (teamId > 0) {
+            builder.addFormDataPart(Parameter.TEAM_ID, String.valueOf(teamId));
+        }
+
+        if (reboundSourceId > 0) {
+            builder.addFormDataPart(Parameter.REBOUND_SOURCE_ID, String.valueOf(reboundSourceId));
+        }
+
         try {
-            MultipartBuilder builder = new MultipartBuilder();
-            builder.type(MultipartBuilder.FORM);
-
-            builder.addFormDataPart(Parameter.TITLE, title);
-
-            if (image.getName().endsWith(Parameter.IMAGE_SUFFIX_GIF)) {
-                mediaType = Parameter.IMAGE_MEDIA_TYPE_GIF;
-            } else if (image.getName().endsWith(Parameter.IMAGE_SUFFIX_JPG)) {
-                mediaType = Parameter.IMAGE_MEDIA_TYPE_JPG;
-            } else if (image.getName().endsWith(Parameter.IMAGE_SUFFIX_PNG)) {
-                mediaType = Parameter.IMAGE_MEDIA_TYPE_PNG;
-            }
-            builder.addFormDataPart(
-                    Parameter.IMAGE,
-                    image.getName(),
-                    RequestBody.create(MediaType.parse(mediaType), image)
-            );
-
-            if (description != null) {
-                builder.addFormDataPart(Parameter.DESCRIPTION, description);
-            }
-
-            if (tags != null) {
-                String temp = "";
-                for (String tag : tags) {
-                    temp += "\"" + tag + "\",";
-                }
-                temp = temp.substring(0, temp.length() - 1);
-                builder.addFormDataPart(Parameter.TAGS, temp);
-            }
-
-            if (teamId > 0) {
-                builder.addFormDataPart(Parameter.TEAM_ID, String.valueOf(teamId));
-            }
-
-            if (reboundSourceId > 0) {
-                builder.addFormDataPart(Parameter.REBOUND_SOURCE_ID, String.valueOf(reboundSourceId));
-            }
-
             Response response = http.post(builder.build(), url, TAG);
             if (response.code() != Parameter.STATUS_202) {
                 throw new ResponseException(response.toString());
@@ -448,6 +440,43 @@ public class ShotService {
 
     public void deleteShot(int id) throws ResponseException {
         String url = SHOT.replace(Parameter.HOLDER_ID, String.valueOf(id));
+
+        try {
+            Response response = http.delete(url, TAG);
+            if (response.code() != Parameter.STATUS_204) {
+                throw new ResponseException(response.toString());
+            }
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
+    public void createShotAttachment(int shot, File file) throws ResponseException {
+        String url = SHOT_ATTACHMENTS.replace(Parameter.HOLDER_SHOT, String.valueOf(shot));
+
+        MultipartBuilder builder = new MultipartBuilder();
+        builder.type(MultipartBuilder.FORM);
+
+        builder.addFormDataPart(
+                Parameter.FILE,
+                file.getName(),
+                RequestBody.create(null, file)
+        );
+
+        try {
+            Response response = http.post(builder.build(), url, TAG);
+            if (response.code() != Parameter.STATUS_202) {
+                throw new ResponseException(response.toString());
+            }
+        } catch (IOException i) {
+            throw new ResponseException(i.getMessage(), i);
+        }
+    }
+
+    public void deleteShotAttachment(int shot, int id) throws ResponseException {
+        String url = SHOT_ATTACHMENT
+                .replace(Parameter.HOLDER_SHOT, String.valueOf(shot))
+                .replace(Parameter.HOLDER_ID, String.valueOf(id));
 
         try {
             Response response = http.delete(url, TAG);

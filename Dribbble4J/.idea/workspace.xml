@@ -24,54 +24,7 @@
     <favorites_list name="Dribbble4J" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ShotService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Network/ShotService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.77684563" vertical-offset="4847" max-vertical-offset="5490">
-              <caret line="455" column="13" selection-start-line="455" selection-start-column="13" selection-end-line="455" selection-end-column="13" />
-              <folding>
-                <element signature="method#ShotService#0;class#ShotService#0" expanded="false" />
-                <element signature="method#getShot#0;class#ShotService#0" expanded="false" />
-                <element signature="method#getShots#1;class#ShotService#0" expanded="false" />
-                <element signature="e#3228#3236#0" expanded="true" />
-                <element signature="method#createShot#0;class#ShotService#0" expanded="false" />
-                <element signature="method#createShot#1;class#ShotService#0" expanded="false" />
-                <element signature="method#updateShot#0;class#ShotService#0" expanded="false" />
-                <element signature="method#updateShot#1;class#ShotService#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Network/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4756" max-vertical-offset="6015">
-              <caret line="325" column="16" selection-start-line="325" selection-start-column="16" selection-end-line="325" selection-end-column="16" />
-              <folding>
-                <element signature="method#UserService#0;class#UserService#0" expanded="false" />
-                <element signature="method#getUser#0;class#UserService#0" expanded="false" />
-                <element signature="method#getUser#1;class#UserService#0" expanded="false" />
-                <element signature="method#getUserBuckets#0;class#UserService#0" expanded="false" />
-                <element signature="method#getUserBuckets#1;class#UserService#0" expanded="false" />
-                <element signature="method#getUserBuckets#2;class#UserService#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-              <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -174,60 +127,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Dribbble4J" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dribbble4J" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dribbble4J" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dribbble4J" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dribbble4J" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Network" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dribbble4J" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dribbble4J" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dribbble" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -503,7 +402,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="741" extended-state="4" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -511,6 +410,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.32905295" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="144" y="154" width="872" height="464" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258427" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -522,14 +422,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2030303" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="898" y="45" width="362" height="603" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2030303" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="898" y="45" width="362" height="603" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.43820226" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="185" y="203" width="1035" height="472" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258427" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.32857144" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="235" y="123" width="1086" height="542" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -566,14 +465,46 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#ShotService#0" expanded="false" />
             <element signature="method#ShotService#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShots#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShots#1;class#ShotService#0" expanded="false" />
-            <element signature="e#3228#3236#0" expanded="true" />
+            <element signature="method#getShots#2;class#ShotService#0" expanded="false" />
+            <element signature="method#getShots#3;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotAttachment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotAttachments#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotAttachments#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotBuckets#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotBuckets#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#createComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#updateComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#deleteComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#isCommentLike#0;class#ShotService#0" expanded="false" />
+            <element signature="method#likeComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#unlikeComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotComments#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotComments#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotCommentLikes#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotCommentLikes#1;class#ShotService#0" expanded="false" />
+            <element signature="method#isShotLike#0;class#ShotService#0" expanded="false" />
+            <element signature="method#likeShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#unlikeShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotLikes#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotLikes#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotProjects#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotProjects#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotRebounds#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotRebounds#1;class#ShotService#0" expanded="false" />
             <element signature="method#createShot#0;class#ShotService#0" expanded="false" />
             <element signature="method#createShot#1;class#ShotService#0" expanded="false" />
             <element signature="method#updateShot#0;class#ShotService#0" expanded="false" />
             <element signature="method#updateShot#1;class#ShotService#0" expanded="false" />
+            <element signature="method#deleteShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#createShotAttachment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#deleteShotAttachment#0;class#ShotService#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -583,14 +514,46 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#ShotService#0" expanded="false" />
             <element signature="method#ShotService#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShots#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShots#1;class#ShotService#0" expanded="false" />
-            <element signature="e#3228#3236#0" expanded="true" />
+            <element signature="method#getShots#2;class#ShotService#0" expanded="false" />
+            <element signature="method#getShots#3;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotAttachment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotAttachments#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotAttachments#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotBuckets#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotBuckets#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#createComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#updateComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#deleteComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#isCommentLike#0;class#ShotService#0" expanded="false" />
+            <element signature="method#likeComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#unlikeComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotComments#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotComments#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotCommentLikes#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotCommentLikes#1;class#ShotService#0" expanded="false" />
+            <element signature="method#isShotLike#0;class#ShotService#0" expanded="false" />
+            <element signature="method#likeShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#unlikeShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotLikes#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotLikes#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotProjects#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotProjects#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotRebounds#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotRebounds#1;class#ShotService#0" expanded="false" />
             <element signature="method#createShot#0;class#ShotService#0" expanded="false" />
             <element signature="method#createShot#1;class#ShotService#0" expanded="false" />
             <element signature="method#updateShot#0;class#ShotService#0" expanded="false" />
             <element signature="method#updateShot#1;class#ShotService#0" expanded="false" />
+            <element signature="method#deleteShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#createShotAttachment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#deleteShotAttachment#0;class#ShotService#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -608,14 +571,46 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#ShotService#0" expanded="false" />
             <element signature="method#ShotService#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShots#0;class#ShotService#0" expanded="false" />
             <element signature="method#getShots#1;class#ShotService#0" expanded="false" />
-            <element signature="e#3228#3236#0" expanded="true" />
+            <element signature="method#getShots#2;class#ShotService#0" expanded="false" />
+            <element signature="method#getShots#3;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotAttachment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotAttachments#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotAttachments#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotBuckets#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotBuckets#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#createComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#updateComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#deleteComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#isCommentLike#0;class#ShotService#0" expanded="false" />
+            <element signature="method#likeComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#unlikeComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotComments#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotComments#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotCommentLikes#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotCommentLikes#1;class#ShotService#0" expanded="false" />
+            <element signature="method#isShotLike#0;class#ShotService#0" expanded="false" />
+            <element signature="method#likeShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#unlikeShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotLikes#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotLikes#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotProjects#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotProjects#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotRebounds#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotRebounds#1;class#ShotService#0" expanded="false" />
             <element signature="method#createShot#0;class#ShotService#0" expanded="false" />
             <element signature="method#createShot#1;class#ShotService#0" expanded="false" />
             <element signature="method#updateShot#0;class#ShotService#0" expanded="false" />
             <element signature="method#updateShot#1;class#ShotService#0" expanded="false" />
+            <element signature="method#deleteShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#createShotAttachment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#deleteShotAttachment#0;class#ShotService#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -672,12 +667,64 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2295">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#UserService#0" expanded="false" />
             <element signature="method#UserService#0;class#UserService#0" expanded="false" />
             <element signature="method#getUser#0;class#UserService#0" expanded="false" />
             <element signature="method#getUser#1;class#UserService#0" expanded="false" />
             <element signature="method#getUserBuckets#0;class#UserService#0" expanded="false" />
             <element signature="method#getUserBuckets#1;class#UserService#0" expanded="false" />
             <element signature="method#getUserBuckets#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserBuckets#3;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowers#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowers#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowers#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowers#3;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowing#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowing#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowing#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowing#3;class#UserService#0" expanded="false" />
+            <element signature="method#getRelationShip#0;class#UserService#0" expanded="false" />
+            <element signature="method#getRelationShip#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserLikes#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserLikes#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserLikes#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserLikes#3;class#UserService#0" expanded="false" />
+            <element signature="method#getUserProjects#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserProjects#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserProjects#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserProjects#3;class#UserService#0" expanded="false" />
+            <element signature="method#getUserShots#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserShots#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserShots#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserShots#3;class#UserService#0" expanded="false" />
+            <element signature="method#getUserTeams#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserTeams#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserTeams#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserTeams#3;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUser#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserBuckets#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserBuckets#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowers#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowers#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowing#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowing#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowingShots#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowingShots#1;class#UserService#0" expanded="false" />
+            <element signature="method#isFollowing#0;class#UserService#0" expanded="false" />
+            <element signature="method#isFollowing#1;class#UserService#0" expanded="false" />
+            <element signature="method#follow#0;class#UserService#0" expanded="false" />
+            <element signature="method#follow#1;class#UserService#0" expanded="false" />
+            <element signature="method#unfollow#0;class#UserService#0" expanded="false" />
+            <element signature="method#unfollow#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserLikes#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserLikes#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserProjects#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserProjects#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserShots#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserShots#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserTeams#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserTeams#1;class#UserService#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -703,18 +750,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07550336" vertical-offset="0" max-vertical-offset="596">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dribbble/Attachment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+          <folding>
+            <element signature="docComment;class#Attachment#0" expanded="false" />
+            <element signature="method#Attachment#0;class#Attachment#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dribbble/Bucket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="docComment;class#Bucket#0" expanded="false" />
+            <element signature="method#Bucket#0;class#Bucket#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dribbble/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="810">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Comment#0" expanded="false" />
+            <element signature="method#Comment#0;class#Comment#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dribbble/Dribbble.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Dribbble#0" expanded="false" />
+            <element signature="method#Dribbble#0;class#Dribbble#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Dribbble/Images.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14925373" vertical-offset="0" max-vertical-offset="765">
-          <caret line="6" column="99" selection-start-line="6" selection-start-column="99" selection-end-line="6" selection-end-column="99" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Images#0" expanded="false" />
+            <element signature="method#Images#0;class#Images#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dribbble/Like.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12437811" vertical-offset="0" max-vertical-offset="750">
-          <caret line="5" column="93" selection-start-line="5" selection-start-column="93" selection-end-line="5" selection-end-column="93" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
+            <element signature="docComment;class#Like#0" expanded="false" />
             <element signature="method#Like#0;class#Like#0" expanded="false" />
           </folding>
         </state>
@@ -722,16 +826,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dribbble/Links.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14925373" vertical-offset="0" max-vertical-offset="603">
-          <caret line="6" column="62" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Links#0" expanded="false" />
+            <element signature="method#Links#0;class#Links#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dribbble/Project.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.19402985" vertical-offset="282" max-vertical-offset="885">
+        <state vertical-scroll-proportion="0.025167786" vertical-offset="75" max-vertical-offset="810">
           <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding>
+            <element signature="docComment;class#Project#0" expanded="false" />
             <element signature="method#Project#0;class#Project#0" expanded="false" />
           </folding>
         </state>
@@ -739,44 +848,194 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dribbble/Rebound.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8557215" vertical-offset="1812" max-vertical-offset="2415">
-          <caret line="6" column="99" selection-start-line="6" selection-start-column="99" selection-end-line="6" selection-end-column="99" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="2340">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
+            <element signature="docComment;class#Rebound#0" expanded="false" />
             <element signature="method#Rebound#0;class#Rebound#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dribbble/Shot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10067114" vertical-offset="0" max-vertical-offset="2340">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding>
+            <element signature="docComment;class#Shot#0" expanded="false" />
+            <element signature="method#Shot#0;class#Shot#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dribbble/Team.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.154229" vertical-offset="1977" max-vertical-offset="2580">
-          <caret line="5" column="93" selection-start-line="5" selection-start-column="93" selection-end-line="5" selection-end-column="93" />
+        <state vertical-scroll-proportion="0.025167786" vertical-offset="15" max-vertical-offset="2520">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Team#0" expanded="false" />
+            <element signature="method#Team#0;class#Team#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dribbble/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3333333" vertical-offset="1887" max-vertical-offset="2490">
+        <state vertical-scroll-proportion="0.025167786" vertical-offset="405" max-vertical-offset="2430">
           <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+          <folding>
+            <element signature="docComment;class#User#0" expanded="false" />
+            <element signature="method#User#0;class#User#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Network/BucketService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+          <caret line="76" column="62" selection-start-line="76" selection-start-column="62" selection-end-line="76" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#BucketService#0" expanded="false" />
+            <element signature="method#BucketService#0;class#BucketService#0" expanded="false" />
+            <element signature="method#getBucket#0;class#BucketService#0" expanded="false" />
+            <element signature="method#createBucket#0;class#BucketService#0" expanded="false" />
+            <element signature="method#updateBucket#0;class#BucketService#0" expanded="false" />
+            <element signature="method#deleteBucket#0;class#BucketService#0" expanded="false" />
+            <element signature="method#getBucketShots#0;class#BucketService#0" expanded="false" />
+            <element signature="method#getBucketShots#1;class#BucketService#0" expanded="false" />
+            <element signature="method#addBucketShot#0;class#BucketService#0" expanded="false" />
+            <element signature="method#removeBucketShot#0;class#BucketService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Network/Http.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+          <caret line="43" column="85" selection-start-line="43" selection-start-column="85" selection-end-line="43" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#Http#0" expanded="false" />
+            <element signature="method#Http#0;class#Http#0" expanded="false" />
+            <element signature="method#get#0;class#Http#0" expanded="false" />
+            <element signature="method#post#0;class#Http#0" expanded="false" />
+            <element signature="method#put#0;class#Http#0" expanded="false" />
+            <element signature="method#patch#0;class#Http#0" expanded="false" />
+            <element signature="method#delete#0;class#Http#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Network/Parameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1995">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Parameter#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Network/ProjectService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <caret line="42" column="94" selection-start-line="42" selection-start-column="94" selection-end-line="42" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#ProjectService#0" expanded="false" />
+            <element signature="method#ProjectService#0;class#ProjectService#0" expanded="false" />
+            <element signature="method#getProject#0;class#ProjectService#0" expanded="false" />
+            <element signature="method#getProjectShots#0;class#ProjectService#0" expanded="false" />
+            <element signature="method#getProjectShots#1;class#ProjectService#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Network/ResponseException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24875621" vertical-offset="0" max-vertical-offset="603">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Network/ShotService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1247" max-vertical-offset="1830">
+          <caret line="113" column="103" selection-start-line="113" selection-start-column="103" selection-end-line="113" selection-end-column="103" />
           <folding>
-            <element signature="e#355#356#0" expanded="false" />
-            <element signature="e#396#397#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#ShotService#0" expanded="false" />
+            <element signature="method#ShotService#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShots#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShots#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getShots#2;class#ShotService#0" expanded="false" />
+            <element signature="method#getShots#3;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotAttachment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotAttachments#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotAttachments#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotBuckets#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotBuckets#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#createComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#updateComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#deleteComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#isCommentLike#0;class#ShotService#0" expanded="false" />
+            <element signature="method#likeComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#unlikeComment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotComments#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotComments#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotCommentLikes#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotCommentLikes#1;class#ShotService#0" expanded="false" />
+            <element signature="method#isShotLike#0;class#ShotService#0" expanded="false" />
+            <element signature="method#likeShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#unlikeShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotLikes#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotLikes#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotProjects#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotProjects#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotRebounds#0;class#ShotService#0" expanded="false" />
+            <element signature="method#getShotRebounds#1;class#ShotService#0" expanded="false" />
+            <element signature="method#createShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#createShot#1;class#ShotService#0" expanded="false" />
+            <element signature="method#updateShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#updateShot#1;class#ShotService#0" expanded="false" />
+            <element signature="method#deleteShot#0;class#ShotService#0" expanded="false" />
+            <element signature="method#createShotAttachment#0;class#ShotService#0" expanded="false" />
+            <element signature="method#deleteShotAttachment#0;class#ShotService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Network/TeamService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="630">
+          <caret line="66" column="100" selection-start-line="66" selection-start-column="100" selection-end-line="66" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#TeamService#0" expanded="false" />
+            <element signature="method#TeamService#0;class#TeamService#0" expanded="false" />
+            <element signature="method#getTeamMembers#0;class#TeamService#0" expanded="false" />
+            <element signature="method#getTeamMembers#1;class#TeamService#0" expanded="false" />
+            <element signature="method#getTeamMembers#2;class#TeamService#0" expanded="false" />
+            <element signature="method#getTeamMembers#3;class#TeamService#0" expanded="false" />
+            <element signature="method#getTeamShots#0;class#TeamService#0" expanded="false" />
+            <element signature="method#getTeamShots#1;class#TeamService#0" expanded="false" />
+            <element signature="method#getTeamShots#2;class#TeamService#0" expanded="false" />
+            <element signature="method#getTeamShots#3;class#TeamService#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Network/Unit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1890547" vertical-offset="882" max-vertical-offset="1485">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1365">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#Unit#0" expanded="false" />
             <element signature="method#Unit#0;class#Unit#0" expanded="false" />
             <element signature="method#getBucket#0;class#Unit#0" expanded="false" />
             <element signature="method#getBucket#1;class#Unit#0" expanded="false" />
@@ -797,13 +1056,21 @@
             <element signature="method#getUser#0;class#Unit#0" expanded="false" />
             <element signature="method#getUser#1;class#Unit#0" expanded="false" />
             <element signature="method#getBuckets#0;class#Unit#0" expanded="false" />
+            <element signature="class#4327:4364" expanded="false" />
             <element signature="method#getBuckets#1;class#Unit#0" expanded="false" />
+            <element signature="class#4542:4583" expanded="false" />
             <element signature="method#getProjects#0;class#Unit#0" expanded="false" />
+            <element signature="class#4847:4885" expanded="false" />
             <element signature="method#getProjects#1;class#Unit#0" expanded="false" />
+            <element signature="class#5065:5107" expanded="false" />
             <element signature="method#getShots#0;class#Unit#0" expanded="false" />
+            <element signature="class#5365:5400" expanded="false" />
             <element signature="method#getShots#1;class#Unit#0" expanded="false" />
+            <element signature="class#5574:5613" expanded="false" />
             <element signature="method#getAttachments#0;class#Unit#0" expanded="false" />
+            <element signature="class#5883:5924" expanded="false" />
             <element signature="method#getAttachments#1;class#Unit#0" expanded="false" />
+            <element signature="class#6110:6155" expanded="false" />
             <element signature="method#getComments#0;class#Unit#0" expanded="false" />
             <element signature="method#getComments#1;class#Unit#0" expanded="false" />
             <element signature="method#getLikes#0;class#Unit#0" expanded="false" />
@@ -811,174 +1078,81 @@
             <element signature="method#getRebounds#0;class#Unit#0" expanded="false" />
             <element signature="method#getRebounds#1;class#Unit#0" expanded="false" />
             <element signature="method#getTeams#0;class#Unit#0" expanded="false" />
+            <element signature="class#7895:7930" expanded="false" />
             <element signature="method#getTeams#1;class#Unit#0" expanded="false" />
+            <element signature="class#8104:8143" expanded="false" />
             <element signature="method#getUsers#0;class#Unit#0" expanded="false" />
+            <element signature="class#8401:8436" expanded="false" />
             <element signature="method#getUsers#1;class#Unit#0" expanded="false" />
+            <element signature="class#8610:8649" expanded="false" />
             <element signature="method#getJson#0;class#Unit#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dribbble/Attachment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2006689" vertical-offset="0" max-vertical-offset="870">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dribbble/Bucket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2006689" vertical-offset="0" max-vertical-offset="885">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="method#Bucket#0;class#Bucket#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dribbble/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.35451505" vertical-offset="272" max-vertical-offset="870">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-          <folding>
-            <element signature="method#Comment#0;class#Comment#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dribbble/Dribbble.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13043478" vertical-offset="12" max-vertical-offset="615">
-          <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
-          <folding>
-            <element signature="method#Dribbble#0;class#Dribbble#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/Http.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70469797" vertical-offset="315" max-vertical-offset="1890">
-          <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
-          <folding>
-            <element signature="e#2361#2362#0" expanded="true" />
-            <element signature="e#2395#2396#0" expanded="true" />
-            <element signature="e#2426#2427#0" expanded="true" />
-            <element signature="e#2466#2467#0" expanded="true" />
-            <element signature="e#2507#2508#0" expanded="true" />
-            <element signature="e#2545#2546#0" expanded="true" />
-            <element signature="e#2583#2584#0" expanded="true" />
-            <element signature="e#2632#2633#0" expanded="true" />
-            <element signature="e#2698#2699#0" expanded="true" />
-            <element signature="e#2753#2754#0" expanded="true" />
-            <element signature="e#2788#2789#0" expanded="true" />
-            <element signature="e#2834#2835#0" expanded="true" />
-            <element signature="e#2897#2898#0" expanded="true" />
-            <element signature="e#2949#2950#0" expanded="true" />
-            <element signature="e#2985#2986#0" expanded="true" />
-            <element signature="e#3031#3032#0" expanded="true" />
-            <element signature="e#3095#3096#0" expanded="true" />
-            <element signature="e#3148#3149#0" expanded="true" />
-            <element signature="e#3179#3180#0" expanded="true" />
-            <element signature="e#3219#3220#0" expanded="true" />
-            <element signature="e#3260#3261#0" expanded="true" />
-            <element signature="e#3298#3299#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/TeamService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.491228" vertical-offset="473" max-vertical-offset="1050">
-          <caret line="71" column="52" selection-start-line="71" selection-start-column="52" selection-end-line="71" selection-end-column="52" />
-          <folding>
-            <element signature="method#TeamService#0;class#TeamService#0" expanded="false" />
-            <element signature="method#getTeamMembers#0;class#TeamService#0" expanded="false" />
-            <element signature="method#getTeamMembers#1;class#TeamService#0" expanded="false" />
-            <element signature="method#getTeamMembers#2;class#TeamService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/Parameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35234898" vertical-offset="0" max-vertical-offset="2025">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/ProjectService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="109" max-vertical-offset="705">
-          <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
-          <folding>
-            <element signature="method#ProjectService#0;class#ProjectService#0" expanded="false" />
-            <element signature="method#getProject#0;class#ProjectService#0" expanded="false" />
-            <element signature="method#getProjectShots#0;class#ProjectService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/BucketService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39597315" vertical-offset="559" max-vertical-offset="1755">
-          <caret line="61" column="64" selection-start-line="61" selection-start-column="64" selection-end-line="61" selection-end-column="64" />
-          <folding>
-            <element signature="method#BucketService#0;class#BucketService#0" expanded="false" />
-            <element signature="method#getBucket#0;class#BucketService#0" expanded="false" />
-            <element signature="method#deleteBucket#0;class#BucketService#0" expanded="false" />
-            <element signature="method#getBucketShots#0;class#BucketService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dribbble/Shot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22651006" vertical-offset="0" max-vertical-offset="2415">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding>
-            <element signature="method#Shot#0;class#Shot#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Network/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4756" max-vertical-offset="6015">
+        <state vertical-scroll-proportion="0.22813036" vertical-offset="2027" max-vertical-offset="2610">
           <caret line="325" column="16" selection-start-line="325" selection-start-column="16" selection-end-line="325" selection-end-column="16" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#UserService#0" expanded="false" />
             <element signature="method#UserService#0;class#UserService#0" expanded="false" />
             <element signature="method#getUser#0;class#UserService#0" expanded="false" />
             <element signature="method#getUser#1;class#UserService#0" expanded="false" />
             <element signature="method#getUserBuckets#0;class#UserService#0" expanded="false" />
             <element signature="method#getUserBuckets#1;class#UserService#0" expanded="false" />
             <element signature="method#getUserBuckets#2;class#UserService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/ShotService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77684563" vertical-offset="4847" max-vertical-offset="5490">
-          <caret line="455" column="13" selection-start-line="455" selection-start-column="13" selection-end-line="455" selection-end-column="13" />
-          <folding>
-            <element signature="method#ShotService#0;class#ShotService#0" expanded="false" />
-            <element signature="method#getShot#0;class#ShotService#0" expanded="false" />
-            <element signature="method#getShots#1;class#ShotService#0" expanded="false" />
-            <element signature="e#3228#3236#0" expanded="true" />
-            <element signature="method#createShot#0;class#ShotService#0" expanded="false" />
-            <element signature="method#createShot#1;class#ShotService#0" expanded="false" />
-            <element signature="method#updateShot#0;class#ShotService#0" expanded="false" />
-            <element signature="method#updateShot#1;class#ShotService#0" expanded="false" />
+            <element signature="method#getUserBuckets#3;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowers#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowers#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowers#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowers#3;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowing#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowing#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowing#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserFollowing#3;class#UserService#0" expanded="false" />
+            <element signature="method#getRelationShip#0;class#UserService#0" expanded="false" />
+            <element signature="method#getRelationShip#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserLikes#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserLikes#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserLikes#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserLikes#3;class#UserService#0" expanded="false" />
+            <element signature="method#getUserProjects#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserProjects#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserProjects#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserProjects#3;class#UserService#0" expanded="false" />
+            <element signature="method#getUserShots#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserShots#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserShots#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserShots#3;class#UserService#0" expanded="false" />
+            <element signature="method#getUserTeams#0;class#UserService#0" expanded="false" />
+            <element signature="method#getUserTeams#1;class#UserService#0" expanded="false" />
+            <element signature="method#getUserTeams#2;class#UserService#0" expanded="false" />
+            <element signature="method#getUserTeams#3;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUser#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserBuckets#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserBuckets#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowers#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowers#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowing#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowing#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowingShots#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserFollowingShots#1;class#UserService#0" expanded="false" />
+            <element signature="method#isFollowing#0;class#UserService#0" expanded="false" />
+            <element signature="method#isFollowing#1;class#UserService#0" expanded="false" />
+            <element signature="method#follow#0;class#UserService#0" expanded="false" />
+            <element signature="method#follow#1;class#UserService#0" expanded="false" />
+            <element signature="method#unfollow#0;class#UserService#0" expanded="false" />
+            <element signature="method#unfollow#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserLikes#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserLikes#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserProjects#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserProjects#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserShots#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserShots#1;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserTeams#0;class#UserService#0" expanded="false" />
+            <element signature="method#getAuthenticatedUserTeams#1;class#UserService#0" expanded="false" />
           </folding>
         </state>
       </provider>
