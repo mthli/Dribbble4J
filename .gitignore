@@ -1,4 +1,7 @@
+# Files
 *.class
+*.jar
 
 # Folders
 Dribbble4J/src/Test/
+Dribbble4J/out/
